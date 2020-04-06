@@ -1,0 +1,1896 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "_id",
+    "Columns",
+    "Sort",
+    "Filter",
+    "Data",
+    "Aggregation"
+  ],
+  "properties": {
+    "_id": {
+      "$id": "#/properties/_id",
+      "type": "string",
+      "title": "The _id Schema",
+      "default": "",
+      "examples": [
+        "SmokeProcess_116"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "Columns": {
+      "$id": "#/properties/Columns",
+      "type": "array",
+      "title": "The Columns Schema",
+      "items": {
+        "$id": "#/properties/Columns/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "Id",
+          "ReadOnly",
+          "Name",
+          "Type",
+          "IsSystemField",
+          "Model",
+          "Widget"
+        ],
+        "properties": {
+          "Id": {
+            "$id": "#/properties/Columns/items/properties/Id",
+            "type": "string",
+            "title": "The Id Schema",
+            "default": "",
+            "examples": [
+              "Name"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "ReadOnly": {
+            "$id": "#/properties/Columns/items/properties/ReadOnly",
+            "type": "boolean",
+            "title": "The Readonly Schema",
+            "default": false,
+            "examples": [
+              true
+            ]
+          },
+          "Name": {
+            "$id": "#/properties/Columns/items/properties/Name",
+            "type": "string",
+            "title": "The Name Schema",
+            "default": "",
+            "examples": [
+              "Name"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "Type": {
+            "$id": "#/properties/Columns/items/properties/Type",
+            "type": "string",
+            "title": "The Type Schema",
+            "default": "",
+            "examples": [
+              "Text"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "IsSystemField": {
+            "$id": "#/properties/Columns/items/properties/IsSystemField",
+            "type": "boolean",
+            "title": "The Issystemfield Schema",
+            "default": false,
+            "examples": [
+              true
+            ]
+          },
+          "Model": {
+            "$id": "#/properties/Columns/items/properties/Model",
+            "type": "string",
+            "title": "The Model Schema",
+            "default": "",
+            "examples": [
+              "SmokeProcess_116"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "Widget": {
+            "$id": "#/properties/Columns/items/properties/Widget",
+            "type": "null",
+            "title": "The Widget Schema",
+            "default": null,
+            "examples": [
+              null
+            ]
+          }
+        }
+      }
+    },
+    "Sort": {
+      "$id": "#/properties/Sort",
+      "type": "array",
+      "title": "The Sort Schema"
+    },
+    "Filter": {
+      "$id": "#/properties/Filter",
+      "type": "object",
+      "title": "The Filter Schema"
+    },
+    "Data": {
+      "$id": "#/properties/Data",
+      "type": "array",
+      "title": "The Data Schema",
+      "items": {
+        "$id": "#/properties/Data/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "_created_by",
+          "Name",
+          "_status",
+          "ThisIsLookup",
+          "_created_at",
+          "ThisIsText",
+          "ThisIsTextArea",
+          "ThisIsNum",
+          "ThisIsCurrency",
+          "ThisIsDate",
+          "ThisIsDateAndTime",
+          "ThisIsYesNo",
+          "ThisIsImage",
+          "ThisIsRating",
+          "ThisIsDropdown",
+          "Untitled_FieldThisIsCheckbox",
+          "ThisIsSlider",
+          "ThisIsUser",
+          "ThisIsCheckList",
+          "ThisIsAttach",
+          "ThisIsSign",
+          "ThisIsRemoteLookup",
+          "_id",
+          "_activity_instance_id"
+        ],
+        "properties": {
+          "_created_by": {
+            "$id": "#/properties/Data/items/properties/_created_by",
+            "type": "object",
+            "title": "The _created_by Schema",
+            "required": [
+              "_id",
+              "Name",
+              "Kind"
+            ],
+            "properties": {
+              "_id": {
+                "$id": "#/properties/Data/items/properties/_created_by/properties/_id",
+                "type": "string",
+                "title": "The _id Schema",
+                "default": "",
+                "examples": [
+                  "Us9Bsf9DyUgS"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "Name": {
+                "$id": "#/properties/Data/items/properties/_created_by/properties/Name",
+                "type": "string",
+                "title": "The Name Schema",
+                "default": "",
+                "examples": [
+                  "KF QA"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "Kind": {
+                "$id": "#/properties/Data/items/properties/_created_by/properties/Kind",
+                "type": "string",
+                "title": "The Kind Schema",
+                "default": "",
+                "examples": [
+                  "User"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          },
+          "Name": {
+            "$id": "#/properties/Data/items/properties/Name",
+            "type": "string",
+            "title": "The Name Schema",
+            "default": "",
+            "examples": [
+              "Request for SmokeProcess"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "_status": {
+            "$id": "#/properties/Data/items/properties/_status",
+            "type": "string",
+            "title": "The _status Schema",
+            "default": "",
+            "examples": [
+              "InProgress"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "ThisIsLookup": {
+            "$id": "#/properties/Data/items/properties/ThisIsLookup",
+            "type": "object",
+            "title": "The Thisislookup Schema",
+            "required": [
+              "Name",
+              "_created_by"
+            ],
+            "properties": {
+              "Name": {
+                "$id": "#/properties/Data/items/properties/ThisIsLookup/properties/Name",
+                "type": "string",
+                "title": "The Name Schema",
+                "default": "",
+                "examples": [
+                  "Request for EndtoEnd"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "_created_by": {
+                "$id": "#/properties/Data/items/properties/ThisIsLookup/properties/_created_by",
+                "type": "object",
+                "title": "The _created_by Schema",
+                "required": [
+                  "_id",
+                  "Name",
+                  "Kind"
+                ],
+                "properties": {
+                  "_id": {
+                    "$id": "#/properties/Data/items/properties/ThisIsLookup/properties/_created_by/properties/_id",
+                    "type": "string",
+                    "title": "The _id Schema",
+                    "default": "",
+                    "examples": [
+                      "Us9Bsf9DyUgS"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "Name": {
+                    "$id": "#/properties/Data/items/properties/ThisIsLookup/properties/_created_by/properties/Name",
+                    "type": "string",
+                    "title": "The Name Schema",
+                    "default": "",
+                    "examples": [
+                      "KF QA"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "Kind": {
+                    "$id": "#/properties/Data/items/properties/ThisIsLookup/properties/_created_by/properties/Kind",
+                    "type": "string",
+                    "title": "The Kind Schema",
+                    "default": "",
+                    "examples": [
+                      "User"
+                    ],
+                    "pattern": "^(.*)$"
+                  }
+                }
+              }
+            }
+          },
+          "_created_at": {
+            "$id": "#/properties/Data/items/properties/_created_at",
+            "type": "string",
+            "title": "The _created_at Schema",
+            "default": "",
+            "examples": [
+              "2020-02-17T04:49:50Z"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "ThisIsText": {
+            "$id": "#/properties/Data/items/properties/ThisIsText",
+            "type": "string",
+            "title": "The Thisistext Schema",
+            "default": "",
+            "examples": [
+              "This is default content"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "ThisIsTextArea": {
+            "$id": "#/properties/Data/items/properties/ThisIsTextArea",
+            "type": "string",
+            "title": "The Thisistextarea Schema",
+            "default": "",
+            "examples": [
+              "This run is for process smoke testing\n"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "ThisIsNum": {
+            "$id": "#/properties/Data/items/properties/ThisIsNum",
+            "type": "integer",
+            "title": "The Thisisnum Schema",
+            "default": 0,
+            "examples": [
+              103
+            ]
+          },
+          "ThisIsCurrency": {
+            "$id": "#/properties/Data/items/properties/ThisIsCurrency",
+            "type": "string",
+            "title": "The Thisiscurrency Schema",
+            "default": "",
+            "examples": [
+              "1000 USD"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "ThisIsDate": {
+            "$id": "#/properties/Data/items/properties/ThisIsDate",
+            "type": "string",
+            "title": "The Thisisdate Schema",
+            "default": "",
+            "examples": [
+              "2020-02-02"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "ThisIsDateAndTime": {
+            "$id": "#/properties/Data/items/properties/ThisIsDateAndTime",
+            "type": "string",
+            "title": "The Thisisdateandtime Schema",
+            "default": "",
+            "examples": [
+              "2020-02-03T00:00:00+05:30 Asia/Calcutta"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "ThisIsYesNo": {
+            "$id": "#/properties/Data/items/properties/ThisIsYesNo",
+            "type": "boolean",
+            "title": "The Thisisyesno Schema",
+            "default": false,
+            "examples": [
+              true
+            ]
+          },
+          "ThisIsImage": {
+            "$id": "#/properties/Data/items/properties/ThisIsImage",
+            "type": "object",
+            "title": "The Thisisimage Schema",
+            "required": [
+              "uploaded",
+              "name",
+              "id",
+              "key",
+              "size",
+              "fileExtension",
+              "photos"
+            ],
+            "properties": {
+              "uploaded": {
+                "$id": "#/properties/Data/items/properties/ThisIsImage/properties/uploaded",
+                "type": "integer",
+                "title": "The Uploaded Schema",
+                "default": 0,
+                "examples": [
+                  100
+                ]
+              },
+              "name": {
+                "$id": "#/properties/Data/items/properties/ThisIsImage/properties/name",
+                "type": "string",
+                "title": "The Name Schema",
+                "default": "",
+                "examples": [
+                  "SampleImage.png"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "id": {
+                "$id": "#/properties/Data/items/properties/ThisIsImage/properties/id",
+                "type": "string",
+                "title": "The Id Schema",
+                "default": "",
+                "examples": [
+                  "Attach-szgn1huPVA"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "key": {
+                "$id": "#/properties/Data/items/properties/ThisIsImage/properties/key",
+                "type": "string",
+                "title": "The Key Schema",
+                "default": "",
+                "examples": [
+                  "AcJwbAAFemos/SmokeProcess_116/PkPFHjcZCCvj/Attach-szgn1huPVA/SampleImage.png"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "size": {
+                "$id": "#/properties/Data/items/properties/ThisIsImage/properties/size",
+                "type": "integer",
+                "title": "The Size Schema",
+                "default": 0,
+                "examples": [
+                  92147
+                ]
+              },
+              "fileExtension": {
+                "$id": "#/properties/Data/items/properties/ThisIsImage/properties/fileExtension",
+                "type": "string",
+                "title": "The Fileextension Schema",
+                "default": "",
+                "examples": [
+                  "png"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "photos": {
+                "$id": "#/properties/Data/items/properties/ThisIsImage/properties/photos",
+                "type": "array",
+                "title": "The Photos Schema",
+                "items": {
+                  "$id": "#/properties/Data/items/properties/ThisIsImage/properties/photos/items",
+                  "type": "object",
+                  "title": "The Items Schema",
+                  "required": [
+                    "fileExtension",
+                    "height",
+                    "key",
+                    "name",
+                    "size",
+                    "width"
+                  ],
+                  "properties": {
+                    "fileExtension": {
+                      "$id": "#/properties/Data/items/properties/ThisIsImage/properties/photos/items/properties/fileExtension",
+                      "type": "string",
+                      "title": "The Fileextension Schema",
+                      "default": "",
+                      "examples": [
+                        "png"
+                      ],
+                      "pattern": "^(.*)$"
+                    },
+                    "height": {
+                      "$id": "#/properties/Data/items/properties/ThisIsImage/properties/photos/items/properties/height",
+                      "type": "integer",
+                      "title": "The Height Schema",
+                      "default": 0,
+                      "examples": [
+                        628
+                      ]
+                    },
+                    "key": {
+                      "$id": "#/properties/Data/items/properties/ThisIsImage/properties/photos/items/properties/key",
+                      "type": "string",
+                      "title": "The Key Schema",
+                      "default": "",
+                      "examples": [
+                        "AcJwbAAFemos/SmokeProcess_116/PkPFHjcZCCvj/Attach-szgn1huPVA/SampleImage.png"
+                      ],
+                      "pattern": "^(.*)$"
+                    },
+                    "name": {
+                      "$id": "#/properties/Data/items/properties/ThisIsImage/properties/photos/items/properties/name",
+                      "type": "string",
+                      "title": "The Name Schema",
+                      "default": "",
+                      "examples": [
+                        "SampleImage.png"
+                      ],
+                      "pattern": "^(.*)$"
+                    },
+                    "size": {
+                      "$id": "#/properties/Data/items/properties/ThisIsImage/properties/photos/items/properties/size",
+                      "type": "integer",
+                      "title": "The Size Schema",
+                      "default": 0,
+                      "examples": [
+                        2612480
+                      ]
+                    },
+                    "width": {
+                      "$id": "#/properties/Data/items/properties/ThisIsImage/properties/photos/items/properties/width",
+                      "type": "integer",
+                      "title": "The Width Schema",
+                      "default": 0,
+                      "examples": [
+                        1040
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "ThisIsRating": {
+            "$id": "#/properties/Data/items/properties/ThisIsRating",
+            "type": "integer",
+            "title": "The Thisisrating Schema",
+            "default": 0,
+            "examples": [
+              3
+            ]
+          },
+          "ThisIsDropdown": {
+            "$id": "#/properties/Data/items/properties/ThisIsDropdown",
+            "type": "string",
+            "title": "The Thisisdropdown Schema",
+            "default": "",
+            "examples": [
+              "One"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "Untitled_FieldThisIsCheckbox": {
+            "$id": "#/properties/Data/items/properties/Untitled_FieldThisIsCheckbox",
+            "type": "array",
+            "title": "The Untitled_fieldthisischeckbox Schema",
+            "items": {
+              "$id": "#/properties/Data/items/properties/Untitled_FieldThisIsCheckbox/items",
+              "type": "string",
+              "title": "The Items Schema",
+              "default": "",
+              "examples": [
+                "Two"
+              ],
+              "pattern": "^(.*)$"
+            }
+          },
+          "ThisIsSlider": {
+            "$id": "#/properties/Data/items/properties/ThisIsSlider",
+            "type": "integer",
+            "title": "The Thisisslider Schema",
+            "default": 0,
+            "examples": [
+              4
+            ]
+          },
+          "ThisIsUser": {
+            "$id": "#/properties/Data/items/properties/ThisIsUser",
+            "type": "object",
+            "title": "The Thisisuser Schema",
+            "required": [
+              "_id",
+              "Name",
+              "Kind"
+            ],
+            "properties": {
+              "_id": {
+                "$id": "#/properties/Data/items/properties/ThisIsUser/properties/_id",
+                "type": "string",
+                "title": "The _id Schema",
+                "default": "",
+                "examples": [
+                  "UsrYDImhppIh"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "Name": {
+                "$id": "#/properties/Data/items/properties/ThisIsUser/properties/Name",
+                "type": "string",
+                "title": "The Name Schema",
+                "default": "",
+                "examples": [
+                  "QAOutlook User"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "Kind": {
+                "$id": "#/properties/Data/items/properties/ThisIsUser/properties/Kind",
+                "type": "string",
+                "title": "The Kind Schema",
+                "default": "",
+                "examples": [
+                  "User"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          },
+          "ThisIsCheckList": {
+            "$id": "#/properties/Data/items/properties/ThisIsCheckList",
+            "type": "array",
+            "title": "The Thisischecklist Schema",
+            "items": {
+              "$id": "#/properties/Data/items/properties/ThisIsCheckList/items",
+              "type": "object",
+              "title": "The Items Schema",
+              "required": [
+                "value",
+                "selected"
+              ],
+              "properties": {
+                "value": {
+                  "$id": "#/properties/Data/items/properties/ThisIsCheckList/items/properties/value",
+                  "type": "string",
+                  "title": "The Value Schema",
+                  "default": "",
+                  "examples": [
+                    "One"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "selected": {
+                  "$id": "#/properties/Data/items/properties/ThisIsCheckList/items/properties/selected",
+                  "type": "boolean",
+                  "title": "The Selected Schema",
+                  "default": false,
+                  "examples": [
+                    false
+                  ]
+                }
+              }
+            }
+          },
+          "ThisIsAttach": {
+            "$id": "#/properties/Data/items/properties/ThisIsAttach",
+            "type": "array",
+            "title": "The Thisisattach Schema",
+            "items": {
+              "$id": "#/properties/Data/items/properties/ThisIsAttach/items",
+              "type": "object",
+              "title": "The Items Schema",
+              "required": [
+                "uploaded",
+                "name",
+                "id",
+                "key",
+                "size",
+                "fileExtension"
+              ],
+              "properties": {
+                "uploaded": {
+                  "$id": "#/properties/Data/items/properties/ThisIsAttach/items/properties/uploaded",
+                  "type": "integer",
+                  "title": "The Uploaded Schema",
+                  "default": 0,
+                  "examples": [
+                    100
+                  ]
+                },
+                "name": {
+                  "$id": "#/properties/Data/items/properties/ThisIsAttach/items/properties/name",
+                  "type": "string",
+                  "title": "The Name Schema",
+                  "default": "",
+                  "examples": [
+                    "SampleTextFile.rtf"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "id": {
+                  "$id": "#/properties/Data/items/properties/ThisIsAttach/items/properties/id",
+                  "type": "string",
+                  "title": "The Id Schema",
+                  "default": "",
+                  "examples": [
+                    "Attach-u_jn1huSAP"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "key": {
+                  "$id": "#/properties/Data/items/properties/ThisIsAttach/items/properties/key",
+                  "type": "string",
+                  "title": "The Key Schema",
+                  "default": "",
+                  "examples": [
+                    "AcJwbAAFemos/SmokeProcess_116/PkPFHjcZCCvj/Attach-u_jn1huSAP/SampleTextFile.rtf"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "size": {
+                  "$id": "#/properties/Data/items/properties/ThisIsAttach/items/properties/size",
+                  "type": "integer",
+                  "title": "The Size Schema",
+                  "default": 0,
+                  "examples": [
+                    490
+                  ]
+                },
+                "fileExtension": {
+                  "$id": "#/properties/Data/items/properties/ThisIsAttach/items/properties/fileExtension",
+                  "type": "string",
+                  "title": "The Fileextension Schema",
+                  "default": "",
+                  "examples": [
+                    "rtf"
+                  ],
+                  "pattern": "^(.*)$"
+                }
+              }
+            }
+          },
+          "ThisIsSign": {
+            "$id": "#/properties/Data/items/properties/ThisIsSign",
+            "type": "object",
+            "title": "The Thisissign Schema",
+            "required": [
+              "key",
+              "name"
+            ],
+            "properties": {
+              "key": {
+                "$id": "#/properties/Data/items/properties/ThisIsSign/properties/key",
+                "type": "string",
+                "title": "The Key Schema",
+                "default": "",
+                "examples": [
+                  "AcJwbAAFemos/SmokeProcess_116/PkPFHjcZCCvj/ThisIsSign.png"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "name": {
+                "$id": "#/properties/Data/items/properties/ThisIsSign/properties/name",
+                "type": "string",
+                "title": "The Name Schema",
+                "default": "",
+                "examples": [
+                  "ThisIsSign"
+                ],
+                "pattern": "^(.*)$"
+              }
+            }
+          },
+          "ThisIsRemoteLookup": {
+            "$id": "#/properties/Data/items/properties/ThisIsRemoteLookup",
+            "type": "string",
+            "title": "The Thisisremotelookup Schema",
+            "default": "",
+            "examples": [
+              "2"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "_id": {
+            "$id": "#/properties/Data/items/properties/_id",
+            "type": "string",
+            "title": "The _id Schema",
+            "default": "",
+            "examples": [
+              "PkPFHjcZCCvj"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "_activity_instance_id": {
+            "$id": "#/properties/Data/items/properties/_activity_instance_id",
+            "type": "array",
+            "title": "The _activity_instance_id Schema",
+            "items": {
+              "$id": "#/properties/Data/items/properties/_activity_instance_id/items",
+              "type": "string",
+              "title": "The Items Schema",
+              "default": "",
+              "examples": [
+                "Pkr2JdvDuD_2"
+              ],
+              "pattern": "^(.*)$"
+            }
+          }
+        }
+      }
+    },
+    "Aggregation": {
+      "$id": "#/properties/Aggregation",
+      "type": "object",
+      "title": "The Aggregation Schema",
+      "required": [
+        "Name",
+        "_created_at",
+        "_created_by",
+        "_status",
+        "ThisIsText",
+        "ThisIsTextArea",
+        "ThisIsNum",
+        "ThisIsCurrency",
+        "ThisIsDate",
+        "ThisIsDateAndTime",
+        "ThisIsYesNo",
+        "ThisIsImage",
+        "ThisIsRating",
+        "ThisIsDropdown",
+        "Untitled_FieldThisIsCheckbox",
+        "ThisIsSlider",
+        "ThisIsUser",
+        "ThisIsCheckList",
+        "ThisIsAttach",
+        "ThisIsSign",
+        "ThisIsLookup",
+        "ThisIsRemoteLookup"
+      ],
+      "properties": {
+        "Name": {
+          "$id": "#/properties/Aggregation/properties/Name",
+          "type": "object",
+          "title": "The Name Schema",
+          "required": [
+            "Count",
+            "Blank",
+            "NonBlank"
+          ],
+          "properties": {
+            "Count": {
+              "$id": "#/properties/Aggregation/properties/Name/properties/Count",
+              "type": "integer",
+              "title": "The Count Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            },
+            "Blank": {
+              "$id": "#/properties/Aggregation/properties/Name/properties/Blank",
+              "type": "integer",
+              "title": "The Blank Schema",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            },
+            "NonBlank": {
+              "$id": "#/properties/Aggregation/properties/Name/properties/NonBlank",
+              "type": "integer",
+              "title": "The Nonblank Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            }
+          }
+        },
+        "_created_at": {
+          "$id": "#/properties/Aggregation/properties/_created_at",
+          "type": "object",
+          "title": "The _created_at Schema",
+          "required": [
+            "Min",
+            "Max",
+            "Count",
+            "Blank",
+            "NonBlank"
+          ],
+          "properties": {
+            "Min": {
+              "$id": "#/properties/Aggregation/properties/_created_at/properties/Min",
+              "type": "string",
+              "title": "The Min Schema",
+              "default": "",
+              "examples": [
+                "2020-02-17T04:49:50Z"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "Max": {
+              "$id": "#/properties/Aggregation/properties/_created_at/properties/Max",
+              "type": "string",
+              "title": "The Max Schema",
+              "default": "",
+              "examples": [
+                "2020-02-17T04:49:50Z"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "Count": {
+              "$id": "#/properties/Aggregation/properties/_created_at/properties/Count",
+              "type": "integer",
+              "title": "The Count Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            },
+            "Blank": {
+              "$id": "#/properties/Aggregation/properties/_created_at/properties/Blank",
+              "type": "integer",
+              "title": "The Blank Schema",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            },
+            "NonBlank": {
+              "$id": "#/properties/Aggregation/properties/_created_at/properties/NonBlank",
+              "type": "integer",
+              "title": "The Nonblank Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            }
+          }
+        },
+        "_created_by": {
+          "$id": "#/properties/Aggregation/properties/_created_by",
+          "type": "object",
+          "title": "The _created_by Schema",
+          "required": [
+            "Count",
+            "Blank",
+            "NonBlank"
+          ],
+          "properties": {
+            "Count": {
+              "$id": "#/properties/Aggregation/properties/_created_by/properties/Count",
+              "type": "integer",
+              "title": "The Count Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            },
+            "Blank": {
+              "$id": "#/properties/Aggregation/properties/_created_by/properties/Blank",
+              "type": "integer",
+              "title": "The Blank Schema",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            },
+            "NonBlank": {
+              "$id": "#/properties/Aggregation/properties/_created_by/properties/NonBlank",
+              "type": "integer",
+              "title": "The Nonblank Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            }
+          }
+        },
+        "_status": {
+          "$id": "#/properties/Aggregation/properties/_status",
+          "type": "object",
+          "title": "The _status Schema",
+          "required": [
+            "Count",
+            "Blank",
+            "NonBlank"
+          ],
+          "properties": {
+            "Count": {
+              "$id": "#/properties/Aggregation/properties/_status/properties/Count",
+              "type": "integer",
+              "title": "The Count Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            },
+            "Blank": {
+              "$id": "#/properties/Aggregation/properties/_status/properties/Blank",
+              "type": "integer",
+              "title": "The Blank Schema",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            },
+            "NonBlank": {
+              "$id": "#/properties/Aggregation/properties/_status/properties/NonBlank",
+              "type": "integer",
+              "title": "The Nonblank Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            }
+          }
+        },
+        "ThisIsText": {
+          "$id": "#/properties/Aggregation/properties/ThisIsText",
+          "type": "object",
+          "title": "The Thisistext Schema",
+          "required": [
+            "Count",
+            "Blank",
+            "NonBlank"
+          ],
+          "properties": {
+            "Count": {
+              "$id": "#/properties/Aggregation/properties/ThisIsText/properties/Count",
+              "type": "integer",
+              "title": "The Count Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            },
+            "Blank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsText/properties/Blank",
+              "type": "integer",
+              "title": "The Blank Schema",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            },
+            "NonBlank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsText/properties/NonBlank",
+              "type": "integer",
+              "title": "The Nonblank Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            }
+          }
+        },
+        "ThisIsTextArea": {
+          "$id": "#/properties/Aggregation/properties/ThisIsTextArea",
+          "type": "object",
+          "title": "The Thisistextarea Schema",
+          "required": [
+            "Count",
+            "Blank",
+            "NonBlank"
+          ],
+          "properties": {
+            "Count": {
+              "$id": "#/properties/Aggregation/properties/ThisIsTextArea/properties/Count",
+              "type": "integer",
+              "title": "The Count Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            },
+            "Blank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsTextArea/properties/Blank",
+              "type": "integer",
+              "title": "The Blank Schema",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            },
+            "NonBlank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsTextArea/properties/NonBlank",
+              "type": "integer",
+              "title": "The Nonblank Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            }
+          }
+        },
+        "ThisIsNum": {
+          "$id": "#/properties/Aggregation/properties/ThisIsNum",
+          "type": "object",
+          "title": "The Thisisnum Schema",
+          "required": [
+            "Sum",
+            "Min",
+            "Max",
+            "Average",
+            "Count",
+            "Blank",
+            "NonBlank"
+          ],
+          "properties": {
+            "Sum": {
+              "$id": "#/properties/Aggregation/properties/ThisIsNum/properties/Sum",
+              "type": "integer",
+              "title": "The Sum Schema",
+              "default": 0,
+              "examples": [
+                103
+              ]
+            },
+            "Min": {
+              "$id": "#/properties/Aggregation/properties/ThisIsNum/properties/Min",
+              "type": "integer",
+              "title": "The Min Schema",
+              "default": 0,
+              "examples": [
+                103
+              ]
+            },
+            "Max": {
+              "$id": "#/properties/Aggregation/properties/ThisIsNum/properties/Max",
+              "type": "integer",
+              "title": "The Max Schema",
+              "default": 0,
+              "examples": [
+                103
+              ]
+            },
+            "Average": {
+              "$id": "#/properties/Aggregation/properties/ThisIsNum/properties/Average",
+              "type": "integer",
+              "title": "The Average Schema",
+              "default": 0,
+              "examples": [
+                103
+              ]
+            },
+            "Count": {
+              "$id": "#/properties/Aggregation/properties/ThisIsNum/properties/Count",
+              "type": "integer",
+              "title": "The Count Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            },
+            "Blank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsNum/properties/Blank",
+              "type": "integer",
+              "title": "The Blank Schema",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            },
+            "NonBlank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsNum/properties/NonBlank",
+              "type": "integer",
+              "title": "The Nonblank Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            }
+          }
+        },
+        "ThisIsCurrency": {
+          "$id": "#/properties/Aggregation/properties/ThisIsCurrency",
+          "type": "object",
+          "title": "The Thisiscurrency Schema",
+          "required": [
+            "Sum",
+            "Min",
+            "Max",
+            "Average",
+            "Count",
+            "Blank",
+            "NonBlank"
+          ],
+          "properties": {
+            "Sum": {
+              "$id": "#/properties/Aggregation/properties/ThisIsCurrency/properties/Sum",
+              "type": "integer",
+              "title": "The Sum Schema",
+              "default": 0,
+              "examples": [
+                1000
+              ]
+            },
+            "Min": {
+              "$id": "#/properties/Aggregation/properties/ThisIsCurrency/properties/Min",
+              "type": "integer",
+              "title": "The Min Schema",
+              "default": 0,
+              "examples": [
+                1000
+              ]
+            },
+            "Max": {
+              "$id": "#/properties/Aggregation/properties/ThisIsCurrency/properties/Max",
+              "type": "integer",
+              "title": "The Max Schema",
+              "default": 0,
+              "examples": [
+                1000
+              ]
+            },
+            "Average": {
+              "$id": "#/properties/Aggregation/properties/ThisIsCurrency/properties/Average",
+              "type": "integer",
+              "title": "The Average Schema",
+              "default": 0,
+              "examples": [
+                1000
+              ]
+            },
+            "Count": {
+              "$id": "#/properties/Aggregation/properties/ThisIsCurrency/properties/Count",
+              "type": "integer",
+              "title": "The Count Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            },
+            "Blank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsCurrency/properties/Blank",
+              "type": "integer",
+              "title": "The Blank Schema",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            },
+            "NonBlank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsCurrency/properties/NonBlank",
+              "type": "integer",
+              "title": "The Nonblank Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            }
+          }
+        },
+        "ThisIsDate": {
+          "$id": "#/properties/Aggregation/properties/ThisIsDate",
+          "type": "object",
+          "title": "The Thisisdate Schema",
+          "required": [
+            "Min",
+            "Max",
+            "Count",
+            "Blank",
+            "NonBlank"
+          ],
+          "properties": {
+            "Min": {
+              "$id": "#/properties/Aggregation/properties/ThisIsDate/properties/Min",
+              "type": "string",
+              "title": "The Min Schema",
+              "default": "",
+              "examples": [
+                "2020-02-02"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "Max": {
+              "$id": "#/properties/Aggregation/properties/ThisIsDate/properties/Max",
+              "type": "string",
+              "title": "The Max Schema",
+              "default": "",
+              "examples": [
+                "2020-02-02"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "Count": {
+              "$id": "#/properties/Aggregation/properties/ThisIsDate/properties/Count",
+              "type": "integer",
+              "title": "The Count Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            },
+            "Blank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsDate/properties/Blank",
+              "type": "integer",
+              "title": "The Blank Schema",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            },
+            "NonBlank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsDate/properties/NonBlank",
+              "type": "integer",
+              "title": "The Nonblank Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            }
+          }
+        },
+        "ThisIsDateAndTime": {
+          "$id": "#/properties/Aggregation/properties/ThisIsDateAndTime",
+          "type": "object",
+          "title": "The Thisisdateandtime Schema",
+          "required": [
+            "Min",
+            "Max",
+            "Count",
+            "Blank",
+            "NonBlank"
+          ],
+          "properties": {
+            "Min": {
+              "$id": "#/properties/Aggregation/properties/ThisIsDateAndTime/properties/Min",
+              "type": "string",
+              "title": "The Min Schema",
+              "default": "",
+              "examples": [
+                "2020-02-02T18:30:00Z"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "Max": {
+              "$id": "#/properties/Aggregation/properties/ThisIsDateAndTime/properties/Max",
+              "type": "string",
+              "title": "The Max Schema",
+              "default": "",
+              "examples": [
+                "2020-02-02T18:30:00Z"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "Count": {
+              "$id": "#/properties/Aggregation/properties/ThisIsDateAndTime/properties/Count",
+              "type": "integer",
+              "title": "The Count Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            },
+            "Blank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsDateAndTime/properties/Blank",
+              "type": "integer",
+              "title": "The Blank Schema",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            },
+            "NonBlank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsDateAndTime/properties/NonBlank",
+              "type": "integer",
+              "title": "The Nonblank Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            }
+          }
+        },
+        "ThisIsYesNo": {
+          "$id": "#/properties/Aggregation/properties/ThisIsYesNo",
+          "type": "object",
+          "title": "The Thisisyesno Schema",
+          "required": [
+            "Count",
+            "Blank",
+            "NonBlank"
+          ],
+          "properties": {
+            "Count": {
+              "$id": "#/properties/Aggregation/properties/ThisIsYesNo/properties/Count",
+              "type": "integer",
+              "title": "The Count Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            },
+            "Blank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsYesNo/properties/Blank",
+              "type": "integer",
+              "title": "The Blank Schema",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            },
+            "NonBlank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsYesNo/properties/NonBlank",
+              "type": "integer",
+              "title": "The Nonblank Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            }
+          }
+        },
+        "ThisIsImage": {
+          "$id": "#/properties/Aggregation/properties/ThisIsImage",
+          "type": "object",
+          "title": "The Thisisimage Schema",
+          "required": [
+            "Count",
+            "Blank",
+            "NonBlank"
+          ],
+          "properties": {
+            "Count": {
+              "$id": "#/properties/Aggregation/properties/ThisIsImage/properties/Count",
+              "type": "integer",
+              "title": "The Count Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            },
+            "Blank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsImage/properties/Blank",
+              "type": "integer",
+              "title": "The Blank Schema",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            },
+            "NonBlank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsImage/properties/NonBlank",
+              "type": "integer",
+              "title": "The Nonblank Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            }
+          }
+        },
+        "ThisIsRating": {
+          "$id": "#/properties/Aggregation/properties/ThisIsRating",
+          "type": "object",
+          "title": "The Thisisrating Schema",
+          "required": [
+            "Sum",
+            "Min",
+            "Max",
+            "Average",
+            "Count",
+            "Blank",
+            "NonBlank"
+          ],
+          "properties": {
+            "Sum": {
+              "$id": "#/properties/Aggregation/properties/ThisIsRating/properties/Sum",
+              "type": "integer",
+              "title": "The Sum Schema",
+              "default": 0,
+              "examples": [
+                3
+              ]
+            },
+            "Min": {
+              "$id": "#/properties/Aggregation/properties/ThisIsRating/properties/Min",
+              "type": "integer",
+              "title": "The Min Schema",
+              "default": 0,
+              "examples": [
+                3
+              ]
+            },
+            "Max": {
+              "$id": "#/properties/Aggregation/properties/ThisIsRating/properties/Max",
+              "type": "integer",
+              "title": "The Max Schema",
+              "default": 0,
+              "examples": [
+                3
+              ]
+            },
+            "Average": {
+              "$id": "#/properties/Aggregation/properties/ThisIsRating/properties/Average",
+              "type": "integer",
+              "title": "The Average Schema",
+              "default": 0,
+              "examples": [
+                3
+              ]
+            },
+            "Count": {
+              "$id": "#/properties/Aggregation/properties/ThisIsRating/properties/Count",
+              "type": "integer",
+              "title": "The Count Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            },
+            "Blank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsRating/properties/Blank",
+              "type": "integer",
+              "title": "The Blank Schema",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            },
+            "NonBlank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsRating/properties/NonBlank",
+              "type": "integer",
+              "title": "The Nonblank Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            }
+          }
+        },
+        "ThisIsDropdown": {
+          "$id": "#/properties/Aggregation/properties/ThisIsDropdown",
+          "type": "object",
+          "title": "The Thisisdropdown Schema",
+          "required": [
+            "Count",
+            "Blank",
+            "NonBlank"
+          ],
+          "properties": {
+            "Count": {
+              "$id": "#/properties/Aggregation/properties/ThisIsDropdown/properties/Count",
+              "type": "integer",
+              "title": "The Count Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            },
+            "Blank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsDropdown/properties/Blank",
+              "type": "integer",
+              "title": "The Blank Schema",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            },
+            "NonBlank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsDropdown/properties/NonBlank",
+              "type": "integer",
+              "title": "The Nonblank Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            }
+          }
+        },
+        "Untitled_FieldThisIsCheckbox": {
+          "$id": "#/properties/Aggregation/properties/Untitled_FieldThisIsCheckbox",
+          "type": "object",
+          "title": "The Untitled_fieldthisischeckbox Schema",
+          "required": [
+            "Count",
+            "Blank",
+            "NonBlank"
+          ],
+          "properties": {
+            "Count": {
+              "$id": "#/properties/Aggregation/properties/Untitled_FieldThisIsCheckbox/properties/Count",
+              "type": "integer",
+              "title": "The Count Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            },
+            "Blank": {
+              "$id": "#/properties/Aggregation/properties/Untitled_FieldThisIsCheckbox/properties/Blank",
+              "type": "integer",
+              "title": "The Blank Schema",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            },
+            "NonBlank": {
+              "$id": "#/properties/Aggregation/properties/Untitled_FieldThisIsCheckbox/properties/NonBlank",
+              "type": "integer",
+              "title": "The Nonblank Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            }
+          }
+        },
+        "ThisIsSlider": {
+          "$id": "#/properties/Aggregation/properties/ThisIsSlider",
+          "type": "object",
+          "title": "The Thisisslider Schema",
+          "required": [
+            "Sum",
+            "Min",
+            "Max",
+            "Average",
+            "Count",
+            "Blank",
+            "NonBlank"
+          ],
+          "properties": {
+            "Sum": {
+              "$id": "#/properties/Aggregation/properties/ThisIsSlider/properties/Sum",
+              "type": "integer",
+              "title": "The Sum Schema",
+              "default": 0,
+              "examples": [
+                4
+              ]
+            },
+            "Min": {
+              "$id": "#/properties/Aggregation/properties/ThisIsSlider/properties/Min",
+              "type": "integer",
+              "title": "The Min Schema",
+              "default": 0,
+              "examples": [
+                4
+              ]
+            },
+            "Max": {
+              "$id": "#/properties/Aggregation/properties/ThisIsSlider/properties/Max",
+              "type": "integer",
+              "title": "The Max Schema",
+              "default": 0,
+              "examples": [
+                4
+              ]
+            },
+            "Average": {
+              "$id": "#/properties/Aggregation/properties/ThisIsSlider/properties/Average",
+              "type": "integer",
+              "title": "The Average Schema",
+              "default": 0,
+              "examples": [
+                4
+              ]
+            },
+            "Count": {
+              "$id": "#/properties/Aggregation/properties/ThisIsSlider/properties/Count",
+              "type": "integer",
+              "title": "The Count Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            },
+            "Blank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsSlider/properties/Blank",
+              "type": "integer",
+              "title": "The Blank Schema",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            },
+            "NonBlank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsSlider/properties/NonBlank",
+              "type": "integer",
+              "title": "The Nonblank Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            }
+          }
+        },
+        "ThisIsUser": {
+          "$id": "#/properties/Aggregation/properties/ThisIsUser",
+          "type": "object",
+          "title": "The Thisisuser Schema",
+          "required": [
+            "Count",
+            "Blank",
+            "NonBlank"
+          ],
+          "properties": {
+            "Count": {
+              "$id": "#/properties/Aggregation/properties/ThisIsUser/properties/Count",
+              "type": "integer",
+              "title": "The Count Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            },
+            "Blank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsUser/properties/Blank",
+              "type": "integer",
+              "title": "The Blank Schema",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            },
+            "NonBlank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsUser/properties/NonBlank",
+              "type": "integer",
+              "title": "The Nonblank Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            }
+          }
+        },
+        "ThisIsCheckList": {
+          "$id": "#/properties/Aggregation/properties/ThisIsCheckList",
+          "type": "object",
+          "title": "The Thisischecklist Schema",
+          "required": [
+            "Count",
+            "Blank",
+            "NonBlank"
+          ],
+          "properties": {
+            "Count": {
+              "$id": "#/properties/Aggregation/properties/ThisIsCheckList/properties/Count",
+              "type": "integer",
+              "title": "The Count Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            },
+            "Blank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsCheckList/properties/Blank",
+              "type": "integer",
+              "title": "The Blank Schema",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            },
+            "NonBlank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsCheckList/properties/NonBlank",
+              "type": "integer",
+              "title": "The Nonblank Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            }
+          }
+        },
+        "ThisIsAttach": {
+          "$id": "#/properties/Aggregation/properties/ThisIsAttach",
+          "type": "object",
+          "title": "The Thisisattach Schema",
+          "required": [
+            "Count",
+            "Blank",
+            "NonBlank"
+          ],
+          "properties": {
+            "Count": {
+              "$id": "#/properties/Aggregation/properties/ThisIsAttach/properties/Count",
+              "type": "integer",
+              "title": "The Count Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            },
+            "Blank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsAttach/properties/Blank",
+              "type": "integer",
+              "title": "The Blank Schema",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            },
+            "NonBlank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsAttach/properties/NonBlank",
+              "type": "integer",
+              "title": "The Nonblank Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            }
+          }
+        },
+        "ThisIsSign": {
+          "$id": "#/properties/Aggregation/properties/ThisIsSign",
+          "type": "object",
+          "title": "The Thisissign Schema",
+          "required": [
+            "Count",
+            "Blank",
+            "NonBlank"
+          ],
+          "properties": {
+            "Count": {
+              "$id": "#/properties/Aggregation/properties/ThisIsSign/properties/Count",
+              "type": "integer",
+              "title": "The Count Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            },
+            "Blank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsSign/properties/Blank",
+              "type": "integer",
+              "title": "The Blank Schema",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            },
+            "NonBlank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsSign/properties/NonBlank",
+              "type": "integer",
+              "title": "The Nonblank Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            }
+          }
+        },
+        "ThisIsLookup": {
+          "$id": "#/properties/Aggregation/properties/ThisIsLookup",
+          "type": "object",
+          "title": "The Thisislookup Schema",
+          "required": [
+            "Count",
+            "Blank",
+            "NonBlank"
+          ],
+          "properties": {
+            "Count": {
+              "$id": "#/properties/Aggregation/properties/ThisIsLookup/properties/Count",
+              "type": "integer",
+              "title": "The Count Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            },
+            "Blank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsLookup/properties/Blank",
+              "type": "integer",
+              "title": "The Blank Schema",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            },
+            "NonBlank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsLookup/properties/NonBlank",
+              "type": "integer",
+              "title": "The Nonblank Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            }
+          }
+        },
+        "ThisIsRemoteLookup": {
+          "$id": "#/properties/Aggregation/properties/ThisIsRemoteLookup",
+          "type": "object",
+          "title": "The Thisisremotelookup Schema",
+          "required": [
+            "Count",
+            "Blank",
+            "NonBlank"
+          ],
+          "properties": {
+            "Count": {
+              "$id": "#/properties/Aggregation/properties/ThisIsRemoteLookup/properties/Count",
+              "type": "integer",
+              "title": "The Count Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            },
+            "Blank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsRemoteLookup/properties/Blank",
+              "type": "integer",
+              "title": "The Blank Schema",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            },
+            "NonBlank": {
+              "$id": "#/properties/Aggregation/properties/ThisIsRemoteLookup/properties/NonBlank",
+              "type": "integer",
+              "title": "The Nonblank Schema",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

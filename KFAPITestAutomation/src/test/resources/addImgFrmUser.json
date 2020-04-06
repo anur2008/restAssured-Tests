@@ -1,0 +1,259 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The Root Schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "required": [
+        "ThisIsImage",
+        "_modified_at"
+    ],
+    "properties": {
+        "ThisIsImage": {
+            "$id": "#/properties/ThisIsImage",
+            "type": "object",
+            "title": "The Thisisimage Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "fileExtension": "jpg",
+                    "width": 996.0,
+                    "height": 1080.0,
+                    "photos": [
+                        {
+                            "name": "sun.jpg",
+                            "key": "AcZAAN7lsPYw/SmokeProcess_143/Pkblfv47f3bY/Attach-gAoNmRmEl_/sun.jpg",
+                            "fileExtension": "jpg",
+                            "width": 996.0,
+                            "height": 1080.0,
+                            "size": 3227040.0
+                        },
+                        {
+                            "size": 56377.0,
+                            "key": "AcZAAN7lsPYw/SmokeProcess_143/Pkblfv47f3bY/Attach-gAoNmRmEl_/photos/1200x800.jpeg",
+                            "name": "1200x800.jpeg",
+                            "fileExtension": "jpeg",
+                            "width": 737.0,
+                            "height": 800.0
+                        },
+                        {
+                            "name": "300x300.jpeg",
+                            "key": "AcZAAN7lsPYw/SmokeProcess_143/Pkblfv47f3bY/Attach-gAoNmRmEl_/photos/300x300.jpeg",
+                            "fileExtension": "jpeg",
+                            "width": 276.0,
+                            "height": 300.0,
+                            "size": 15030.0
+                        }
+                    ],
+                    "size": 3227040.0,
+                    "id": "Attach-gAoNmRmEl_",
+                    "key": "AcZAAN7lsPYw/SmokeProcess_143/Pkblfv47f3bY/Attach-gAoNmRmEl_/sun.jpg",
+                    "name": "sun.jpg"
+                }
+            ],
+            "required": [
+                "fileExtension",
+                "height",
+                "id",
+                "key",
+                "name",
+                "photos",
+                "size",
+                "width"
+            ],
+            "properties": {
+                "fileExtension": {
+                    "$id": "#/properties/ThisIsImage/properties/fileExtension",
+                    "type": "string",
+                    "title": "The Fileextension Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "jpg"
+                    ]
+                },
+                "height": {
+                    "$id": "#/properties/ThisIsImage/properties/height",
+                    "type": "integer",
+                    "title": "The Height Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1080
+                    ]
+                },
+                "id": {
+                    "$id": "#/properties/ThisIsImage/properties/id",
+                    "type": "string",
+                    "title": "The Id Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Attach-gAoNmRmEl_"
+                    ]
+                },
+                "key": {
+                    "$id": "#/properties/ThisIsImage/properties/key",
+                    "type": "string",
+                    "title": "The Key Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "AcZAAN7lsPYw/SmokeProcess_143/Pkblfv47f3bY/Attach-gAoNmRmEl_/sun.jpg"
+                    ]
+                },
+                "name": {
+                    "$id": "#/properties/ThisIsImage/properties/name",
+                    "type": "string",
+                    "title": "The Name Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "sun.jpg"
+                    ]
+                },
+                "photos": {
+                    "$id": "#/properties/ThisIsImage/properties/photos",
+                    "type": "array",
+                    "title": "The Photos Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "items": {
+                        "$id": "#/properties/ThisIsImage/properties/photos/items",
+                        "type": "object",
+                        "title": "The Items Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "key": "AcZAAN7lsPYw/SmokeProcess_143/Pkblfv47f3bY/Attach-gAoNmRmEl_/sun.jpg",
+                                "name": "sun.jpg",
+                                "fileExtension": "jpg",
+                                "width": 996.0,
+                                "height": 1080.0,
+                                "size": 3227040.0
+                            },
+                            {
+                                "key": "AcZAAN7lsPYw/SmokeProcess_143/Pkblfv47f3bY/Attach-gAoNmRmEl_/photos/1200x800.jpeg",
+                                "name": "1200x800.jpeg",
+                                "fileExtension": "jpeg",
+                                "width": 737.0,
+                                "height": 800.0,
+                                "size": 56377.0
+                            },
+                            {
+                                "width": 276.0,
+                                "height": 300.0,
+                                "size": 15030.0,
+                                "name": "300x300.jpeg",
+                                "key": "AcZAAN7lsPYw/SmokeProcess_143/Pkblfv47f3bY/Attach-gAoNmRmEl_/photos/300x300.jpeg",
+                                "fileExtension": "jpeg"
+                            }
+                        ],
+                        "required": [
+                            "fileExtension",
+                            "height",
+                            "key",
+                            "name",
+                            "size",
+                            "width"
+                        ],
+                        "properties": {
+                            "fileExtension": {
+                                "$id": "#/properties/ThisIsImage/properties/photos/items/properties/fileExtension",
+                                "type": "string",
+                                "title": "The Fileextension Schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "jpg"
+                                ]
+                            },
+                            "height": {
+                                "$id": "#/properties/ThisIsImage/properties/photos/items/properties/height",
+                                "type": "integer",
+                                "title": "The Height Schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    1080
+                                ]
+                            },
+                            "key": {
+                                "$id": "#/properties/ThisIsImage/properties/photos/items/properties/key",
+                                "type": "string",
+                                "title": "The Key Schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "AcZAAN7lsPYw/SmokeProcess_143/Pkblfv47f3bY/Attach-gAoNmRmEl_/sun.jpg"
+                                ]
+                            },
+                            "name": {
+                                "$id": "#/properties/ThisIsImage/properties/photos/items/properties/name",
+                                "type": "string",
+                                "title": "The Name Schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "sun.jpg"
+                                ]
+                            },
+                            "size": {
+                                "$id": "#/properties/ThisIsImage/properties/photos/items/properties/size",
+                                "type": "integer",
+                                "title": "The Size Schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    3227040
+                                ]
+                            },
+                            "width": {
+                                "$id": "#/properties/ThisIsImage/properties/photos/items/properties/width",
+                                "type": "integer",
+                                "title": "The Width Schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    996
+                                ]
+                            }
+                        }
+                    }
+                },
+                "size": {
+                    "$id": "#/properties/ThisIsImage/properties/size",
+                    "type": "integer",
+                    "title": "The Size Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        3227040
+                    ]
+                },
+                "width": {
+                    "$id": "#/properties/ThisIsImage/properties/width",
+                    "type": "integer",
+                    "title": "The Width Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        996
+                    ]
+                }
+            }
+        },
+        "_modified_at": {
+            "$id": "#/properties/_modified_at",
+            "type": "string",
+            "title": "The _modified_at Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "2020-03-09T04:22:18Z"
+            ]
+        }
+    }
+}

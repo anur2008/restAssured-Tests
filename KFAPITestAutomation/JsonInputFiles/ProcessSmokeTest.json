@@ -1,0 +1,152 @@
+{  	  "Admin":       "QAGmail",
+      "flowType":       "Process",
+       "flowName":       "SmokeProcess", 
+      "timeZone1":       "(GMT+05:30) India Standard Time", 
+      "timeZone2":       "(GMT-08:00) Pacific Time", 
+    "Locale":       "English (India)", 
+     
+     "TextFieldData":{
+       "FieldType":       "Text",
+       "FieldName":       "ThisIsText",
+       "Default":       "Default",
+       "DefaultParam":       "This is default content",
+       "Required":       "Required",
+       "RequiredParam":       "Yes"
+       },
+     "TextAreaFieldData":{
+       "FieldType":       "Text Area",
+       "FieldName":       "ThisIsTextArea",
+       "FieldValue":		"This run is for process smoke testing"
+       },
+     "NumberFieldData":{
+       "FieldType":       "Number",
+       "FieldName":       "ThisIsNum",
+       "FieldValue":		"103"
+       },
+     "CurrencyFieldData":{
+       "FieldType":       "Currency",
+       "FieldName":       "ThisIsCurrency",
+       "FieldValue":		"1000",
+       "ExpectedFieldValue":		"$ 1,000"
+       }, 
+       "DateFieldData":{
+       "FieldType":       "Date",
+       "FieldName":       "ThisIsDate",
+       "FieldValue":		"2",
+       "ExpectedFieldValue":"2/12/19"
+       }, 
+       
+     "DateAndTimeFieldData":{
+       "FieldType":       "Date & Time",
+       "FieldName":       "ThisIsDateAndTime",
+       "FieldValue":		"31/12/2019, 12:00 am",
+       "ExpectedFieldValue":		"30/12/19, 10:30 am"
+       },
+       
+       "YesNoFieldData":{
+       "FieldType":       "Yes/No",
+       "FieldName":       "ThisIsYesNo",
+       "FieldValue":		"Yes"
+       },   
+     "ImageFieldData":{
+       "FieldType":       "Image",
+       "FieldName":       "ThisIsImage",
+       "FieldValue":		"/src/main/java/org/kissflow/qa/utils/SampleImage.png"
+       },
+       
+      "RatingFieldData":{
+       "FieldType":       "Rating",
+       "FieldName":       "ThisIsRating",
+       "FieldValue":		"3"
+       
+       } ,
+       
+       "DropdownFieldData":{
+       "FieldType":       "Dropdown",
+       "FieldName":       "ThisIsDropdown",
+       "listType":       "Datalist",
+       "ListName":       "Agaram",
+       "FieldValue":		"One"
+       } ,
+       
+       "CheckboxFieldData":{
+       "FieldType":       "Checkbox / Multi-select",
+       "FieldName":       "ThisIsCheckbox",
+       "FieldValue":		"Two"
+       },
+       "SliderFieldData":{
+       "FieldType":       "Slider",
+       "FieldName":       "ThisIsSlider",
+       "Min":       "Min",
+       "MinValue":       "0",
+       "Max":       "Max",
+       "MaxValue":       "10",
+       "IntervalSize":       "IntervalSize",
+       "IntervalValue":       "2",
+       "FieldValue":		"4"
+       },
+       "UserFieldData":{
+       "FieldType":       "User",
+       "FieldName":       "ThisIsUser",
+       "FieldValue":		"QAOutlook User"
+       },
+       "ChecklistFieldData":{
+       "FieldType":       "Checklist",
+       "FieldName":       "ThisIsCheckList",
+       "FieldValue":		"Three"
+       },
+       "AttachmentFieldData":{
+       "FieldType":       "Attachment",
+       "FieldName":       "ThisIsAttach",
+       "FieldValue":		"/src/main/java/org/kissflow/qa/utils/SampleTextFile.rtf"
+       },
+       "SignFieldData":{
+       "FieldType":       "Signature",
+       "FieldName":       "ThisIsSign"
+       },
+       "LookupFieldData":{
+       "FieldType":       "Lookup",
+       "FieldName":       "ThisIsLookup",
+       "LookedUpParam":       "Aadharam",
+       "LookedUpSource":       "EndtoEnd",
+       "LookedUpField":       "Paguthi",
+       "LookedUpFieldValue":  "Created by",
+       "FieldValue":		"EndtoEnd"
+       
+       },  
+       
+       "RemoteLookupFieldData":{
+       "FieldType":       "Remote Lookup",
+       "FieldName":       "ThisIsRemoteLookup",
+       "RemoteLookedUpParam":       "RemoteLookupUrl",
+       "RemoteLookedUpSource":       "https://reqres.in/api/users?page=2",
+       "RemoteLookedUpField":       "RemoteLookUpJsonPath",
+       "ReLookedUpFieldValue":       "$.page"
+       
+       },
+       "WorkflowData":{
+       "WorkflowName1":       "Approval1",
+       "WorkflowName2":       "Approval2",
+       "WorkflowName3":       "Start",
+       "WorkflowName4":       "Completed",
+       "Approver1":       "QAYahoo UserAdmin",
+       "Approver2":       "QAOutlook User",
+       "Formula1":       "",
+       "Formula2":       ""
+       },
+       
+       "Permission":{
+       "ReadOnly":       "Read-Only",
+       "Hidden":       "Hidden",
+       "Editable":       "Editable"
+       },
+       "SendingBackMess":       "I am sending back, reassign to someone",
+       "ReassigningMess":       "I am reassigning back to you", 
+       "RejectMess":       "This item is rejected", 
+       "WithdrawMess":       "This process withdrawn",
+       
+        "Status":{
+       "InProgress":       "In Progress",
+       "Checked":       "Checked"
+       }
+}  

@@ -1,0 +1,297 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The Root Schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "required": [
+        "Columns",
+        "Data",
+        "CardFields"
+    ],
+    "properties": {
+        "Columns": {
+            "$id": "#/properties/Columns",
+            "type": "array",
+            "title": "The Columns Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "items": {
+                "$id": "#/properties/Columns/items",
+                "type": "object",
+                "title": "The Items Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                    {
+                        "Widget": null,
+                        "Id": "Name",
+                        "IsSystemField": true,
+                        "Name": "Name",
+                        "Model": "SmokeProcess_143",
+                        "Type": "Text"
+                    },
+                    {
+                        "Type": "UserGroupList",
+                        "Widget": null,
+                        "Id": "_current_assigned_to",
+                        "Name": "Currently assigned to",
+                        "IsSystemField": true,
+                        "Model": "SmokeProcess_143"
+                    },
+                    {
+                        "Type": "Text",
+                        "Widget": null,
+                        "Id": "_current_step",
+                        "Name": "Current step",
+                        "IsSystemField": true,
+                        "Model": "SmokeProcess_143"
+                    },
+                    {
+                        "Name": "Modified at",
+                        "IsSystemField": true,
+                        "Model": "SmokeProcess_143",
+                        "Type": "DateTime",
+                        "Widget": null,
+                        "Id": "_modified_at"
+                    },
+                    {
+                        "Id": "_status",
+                        "IsSystemField": true,
+                        "Name": "Status",
+                        "Model": "SmokeProcess_143",
+                        "Type": "Text",
+                        "Widget": "Status"
+                    },
+                    {
+                        "Id": "_progress",
+                        "Name": "Progress",
+                        "IsSystemField": true,
+                        "Model": "SmokeProcess_143",
+                        "Type": "Number",
+                        "Widget": "Progress"
+                    },
+                    {
+                        "Type": "DateTime",
+                        "Widget": null,
+                        "Id": "_completed_at",
+                        "Name": "Completed at",
+                        "IsSystemField": true,
+                        "Model": "SmokeProcess_143"
+                    },
+                    {
+                        "Widget": null,
+                        "Id": "_created_by",
+                        "IsSystemField": true,
+                        "Name": "Created by",
+                        "Model": "SmokeProcess_143",
+                        "Type": "User"
+                    },
+                    {
+                        "Model": "SmokeProcess_143",
+                        "Type": "DateTime",
+                        "Widget": null,
+                        "Id": "_created_at",
+                        "IsSystemField": true,
+                        "Name": "Created at"
+                    },
+                    {
+                        "Name": "Current step",
+                        "IsSystemField": true,
+                        "Model": "SmokeProcess_143",
+                        "Type": "Text",
+                        "Widget": null,
+                        "Id": "_current_step"
+                    },
+                    {
+                        "Name": "Expected at",
+                        "IsSystemField": false,
+                        "Model": "ActivityInstance",
+                        "Type": "DateTime",
+                        "Widget": null,
+                        "Id": "ExpectedAt"
+                    }
+                ],
+                "required": [
+                    "Id",
+                    "Name",
+                    "Type",
+                    "IsSystemField",
+                    "Model",
+                    "Widget"
+                ],
+                "properties": {
+                    "Id": {
+                        "$id": "#/properties/Columns/items/properties/Id",
+                        "type": "string",
+                        "title": "The Id Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Name"
+                        ]
+                    },
+                    "Name": {
+                        "$id": "#/properties/Columns/items/properties/Name",
+                        "type": "string",
+                        "title": "The Name Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Name"
+                        ]
+                    },
+                    "Type": {
+                        "$id": "#/properties/Columns/items/properties/Type",
+                        "type": "string",
+                        "title": "The Type Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Text"
+                        ]
+                    },
+                    "IsSystemField": {
+                        "$id": "#/properties/Columns/items/properties/IsSystemField",
+                        "type": "boolean",
+                        "title": "The Issystemfield Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": false,
+                        "examples": [
+                            true
+                        ]
+                    },
+                    "Model": {
+                        "$id": "#/properties/Columns/items/properties/Model",
+                        "type": "string",
+                        "title": "The Model Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "SmokeProcess_143"
+                        ]
+                    },
+                    "Widget": {
+                        "$id": "#/properties/Columns/items/properties/Widget",
+                        "title": "The Widget Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": null,
+                        "examples": [
+                            null
+                        ]
+                    }
+                }
+            }
+        },
+        "Data": {
+            "$id": "#/properties/Data",
+            "type": "array",
+            "title": "The Data Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": []
+        },
+        "CardFields": {
+            "$id": "#/properties/CardFields",
+            "type": "array",
+            "title": "The Cardfields Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "items": {
+                "$id": "#/properties/CardFields/items",
+                "type": "object",
+                "title": "The Items Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                    {
+                        "Type": "User",
+                        "Name": "Created By",
+                        "IsSystemField": true,
+                        "Id": "_created_by",
+                        "Model": "SmokeProcess_143"
+                    },
+                    {
+                        "Id": "_created_at",
+                        "Model": "SmokeProcess_143",
+                        "Type": "DateTime",
+                        "Name": "Created At",
+                        "IsSystemField": true
+                    },
+                    {
+                        "Name": "Current Step",
+                        "IsSystemField": true,
+                        "Id": "_current_step",
+                        "Model": "SmokeProcess_143",
+                        "Type": "Text"
+                    },
+                    {
+                        "Id": "ExpectedAt",
+                        "Model": "ActivityInstance",
+                        "Type": "DateTime",
+                        "Name": "ExpectedAt",
+                        "IsSystemField": false
+                    }
+                ],
+                "required": [
+                    "Id",
+                    "Name",
+                    "Type",
+                    "IsSystemField",
+                    "Model"
+                ],
+                "properties": {
+                    "Id": {
+                        "$id": "#/properties/CardFields/items/properties/Id",
+                        "type": "string",
+                        "title": "The Id Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "_created_by"
+                        ]
+                    },
+                    "Name": {
+                        "$id": "#/properties/CardFields/items/properties/Name",
+                        "type": "string",
+                        "title": "The Name Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Created By"
+                        ]
+                    },
+                    "Type": {
+                        "$id": "#/properties/CardFields/items/properties/Type",
+                        "type": "string",
+                        "title": "The Type Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "User"
+                        ]
+                    },
+                    "IsSystemField": {
+                        "$id": "#/properties/CardFields/items/properties/IsSystemField",
+                        "type": "boolean",
+                        "title": "The Issystemfield Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": false,
+                        "examples": [
+                            true
+                        ]
+                    },
+                    "Model": {
+                        "$id": "#/properties/CardFields/items/properties/Model",
+                        "type": "string",
+                        "title": "The Model Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "SmokeProcess_143"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

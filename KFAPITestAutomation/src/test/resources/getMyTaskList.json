@@ -1,0 +1,573 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The Root Schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "required": [
+        "Columns",
+        "Data",
+        "CardFields"
+    ],
+    "properties": {
+        "Columns": {
+            "$id": "#/properties/Columns",
+            "type": "array",
+            "title": "The Columns Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "items": {
+                "$id": "#/properties/Columns/items",
+                "type": "object",
+                "title": "The Items Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                    {
+                        "Widget": null,
+                        "Id": "Name",
+                        "Name": "Name",
+                        "IsSystemField": true,
+                        "Model": "SmokeProcess_143",
+                        "Type": "Text"
+                    },
+                    {
+                        "Model": "SmokeProcess_143",
+                        "Type": "UserGroupList",
+                        "Widget": null,
+                        "Id": "_current_assigned_to",
+                        "Name": "Currently assigned to",
+                        "IsSystemField": true
+                    },
+                    {
+                        "IsSystemField": true,
+                        "Name": "Current step",
+                        "Model": "SmokeProcess_143",
+                        "Type": "Text",
+                        "Widget": null,
+                        "Id": "_current_step"
+                    },
+                    {
+                        "Model": "SmokeProcess_143",
+                        "Type": "DateTime",
+                        "Widget": null,
+                        "Id": "_modified_at",
+                        "Name": "Modified at",
+                        "IsSystemField": true
+                    },
+                    {
+                        "Id": "_status",
+                        "Name": "Status",
+                        "IsSystemField": true,
+                        "Model": "SmokeProcess_143",
+                        "Type": "Text",
+                        "Widget": "Status"
+                    },
+                    {
+                        "IsSystemField": true,
+                        "Name": "Progress",
+                        "Model": "SmokeProcess_143",
+                        "Type": "Number",
+                        "Widget": "Progress",
+                        "Id": "_progress"
+                    },
+                    {
+                        "Widget": null,
+                        "Id": "_created_by",
+                        "Name": "Created by",
+                        "IsSystemField": true,
+                        "Model": "SmokeProcess_143",
+                        "Type": "User"
+                    },
+                    {
+                        "IsSystemField": true,
+                        "Name": "Created at",
+                        "Model": "SmokeProcess_143",
+                        "Type": "DateTime",
+                        "Widget": null,
+                        "Id": "_created_at"
+                    },
+                    {
+                        "Name": "Current step",
+                        "IsSystemField": true,
+                        "Model": "SmokeProcess_143",
+                        "Type": "Text",
+                        "Widget": null,
+                        "Id": "_current_step"
+                    },
+                    {
+                        "IsSystemField": false,
+                        "Name": "Expected at",
+                        "Model": "ActivityInstance",
+                        "Type": "DateTime",
+                        "Widget": null,
+                        "Id": "ExpectedAt"
+                    }
+                ],
+                "required": [
+                    "Id",
+                    "Name",
+                    "Type",
+                    "IsSystemField",
+                    "Model",
+                    "Widget"
+                ],
+                "properties": {
+                    "Id": {
+                        "$id": "#/properties/Columns/items/properties/Id",
+                        "type": "string",
+                        "title": "The Id Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Name"
+                        ]
+                    },
+                    "Name": {
+                        "$id": "#/properties/Columns/items/properties/Name",
+                        "type": "string",
+                        "title": "The Name Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Name"
+                        ]
+                    },
+                    "Type": {
+                        "$id": "#/properties/Columns/items/properties/Type",
+                        "type": "string",
+                        "title": "The Type Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Text"
+                        ]
+                    },
+                    "IsSystemField": {
+                        "$id": "#/properties/Columns/items/properties/IsSystemField",
+                        "type": "boolean",
+                        "title": "The Issystemfield Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": false,
+                        "examples": [
+                            true
+                        ]
+                    },
+                    "Model": {
+                        "$id": "#/properties/Columns/items/properties/Model",
+                        "type": "string",
+                        "title": "The Model Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "SmokeProcess_143"
+                        ]
+                    },
+                    "Widget": {
+                        "$id": "#/properties/Columns/items/properties/Widget",
+                        "title": "The Widget Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": null,
+                        "examples": [
+                            null
+                        ]
+                    }
+                }
+            }
+        },
+        "Data": {
+            "$id": "#/properties/Data",
+            "type": "array",
+            "title": "The Data Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "items": {
+                "$id": "#/properties/Data/items",
+                "type": "object",
+                "title": "The Items Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                    {
+                        "Name": "Request for SmokeProcess",
+                        "_current_step": "Approval1",
+                        "_current_assigned_to": [
+                            {
+                                "Kind": "User",
+                                "Name": "QAOutlook User",
+                                "_id": "UszVYqHGQGRs"
+                            },
+                            {
+                                "_id": "UsxpYqHRxe19",
+                                "Kind": "User",
+                                "Name": "QAYahoo UserAdmin"
+                            }
+                        ],
+                        "_status": "InProgress",
+                        "_activity_id": "Activity_aKsEtFXs",
+                        "_id": "PkGsfv4a96ax",
+                        "_modified_at": "2020-03-09T04:22:12Z",
+                        "_created_by": {
+                            "Kind": "User",
+                            "Name": "QAYahoo UserAdmin",
+                            "_id": "UsxpYqHRxe19"
+                        },
+                        "_activity_instance_id": "PkHjpA7hT6Dr",
+                        "_progress": 0.0,
+                        "_created_at": "2020-03-09T04:22:11Z"
+                    },
+                    {
+                        "_activity_id": "Activity_aKsEtFXs",
+                        "_id": "Pk61mUF0D7M7",
+                        "_modified_at": "2020-03-09T04:22:00Z",
+                        "_created_by": {
+                            "_id": "UsoeANVSzy2F",
+                            "Kind": "User",
+                            "Name": "KF QA"
+                        },
+                        "_activity_instance_id": "PkTbJzwRblxL",
+                        "_progress": 0.0,
+                        "_created_at": "2020-03-09T04:20:44Z",
+                        "Name": "Request for SmokeProcess",
+                        "_current_assigned_to": [
+                            {
+                                "_id": "UszVYqHGQGRs",
+                                "Kind": "User",
+                                "Name": "QAOutlook User"
+                            },
+                            {
+                                "_id": "UsxpYqHRxe19",
+                                "Kind": "User",
+                                "Name": "QAYahoo UserAdmin"
+                            }
+                        ],
+                        "_current_step": "Approval1",
+                        "_status": "InProgress"
+                    }
+                ],
+                "required": [
+                    "_id",
+                    "Name",
+                    "_current_assigned_to",
+                    "_current_step",
+                    "_modified_at",
+                    "_status",
+                    "_progress",
+                    "_created_by",
+                    "_created_at",
+                    "_activity_id",
+                    "_activity_instance_id"
+                ],
+                "properties": {
+                    "_id": {
+                        "$id": "#/properties/Data/items/properties/_id",
+                        "type": "string",
+                        "title": "The _id Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "PkGsfv4a96ax"
+                        ]
+                    },
+                    "Name": {
+                        "$id": "#/properties/Data/items/properties/Name",
+                        "type": "string",
+                        "title": "The Name Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Request for SmokeProcess"
+                        ]
+                    },
+                    "_current_assigned_to": {
+                        "$id": "#/properties/Data/items/properties/_current_assigned_to",
+                        "type": "array",
+                        "title": "The _current_assigned_to Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": [],
+                        "items": {
+                            "$id": "#/properties/Data/items/properties/_current_assigned_to/items",
+                            "type": "object",
+                            "title": "The Items Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "Name": "QAOutlook User",
+                                    "_id": "UszVYqHGQGRs",
+                                    "Kind": "User"
+                                },
+                                {
+                                    "Name": "QAYahoo UserAdmin",
+                                    "_id": "UsxpYqHRxe19",
+                                    "Kind": "User"
+                                }
+                            ],
+                            "required": [
+                                "_id",
+                                "Name",
+                                "Kind"
+                            ],
+                            "properties": {
+                                "_id": {
+                                    "$id": "#/properties/Data/items/properties/_current_assigned_to/items/properties/_id",
+                                    "type": "string",
+                                    "title": "The _id Schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "UszVYqHGQGRs"
+                                    ]
+                                },
+                                "Name": {
+                                    "$id": "#/properties/Data/items/properties/_current_assigned_to/items/properties/Name",
+                                    "type": "string",
+                                    "title": "The Name Schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "QAOutlook User"
+                                    ]
+                                },
+                                "Kind": {
+                                    "$id": "#/properties/Data/items/properties/_current_assigned_to/items/properties/Kind",
+                                    "type": "string",
+                                    "title": "The Kind Schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "User"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "_current_step": {
+                        "$id": "#/properties/Data/items/properties/_current_step",
+                        "type": "string",
+                        "title": "The _current_step Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Approval1"
+                        ]
+                    },
+                    "_modified_at": {
+                        "$id": "#/properties/Data/items/properties/_modified_at",
+                        "type": "string",
+                        "title": "The _modified_at Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "2020-03-09T04:22:12Z"
+                        ]
+                    },
+                    "_status": {
+                        "$id": "#/properties/Data/items/properties/_status",
+                        "type": "string",
+                        "title": "The _status Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "InProgress"
+                        ]
+                    },
+                    "_progress": {
+                        "$id": "#/properties/Data/items/properties/_progress",
+                        "type": "number",
+                        "title": "The _progress Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0,
+                        "examples": [
+                            0
+                        ]
+                    },
+                    "_created_by": {
+                        "$id": "#/properties/Data/items/properties/_created_by",
+                        "type": "object",
+                        "title": "The _created_by Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "_id": "UsxpYqHRxe19",
+                                "Kind": "User",
+                                "Name": "QAYahoo UserAdmin"
+                            }
+                        ],
+                        "required": [
+                            "_id",
+                            "Name",
+                            "Kind"
+                        ],
+                        "properties": {
+                            "_id": {
+                                "$id": "#/properties/Data/items/properties/_created_by/properties/_id",
+                                "type": "string",
+                                "title": "The _id Schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "UsxpYqHRxe19"
+                                ]
+                            },
+                            "Name": {
+                                "$id": "#/properties/Data/items/properties/_created_by/properties/Name",
+                                "type": "string",
+                                "title": "The Name Schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "QAYahoo UserAdmin"
+                                ]
+                            },
+                            "Kind": {
+                                "$id": "#/properties/Data/items/properties/_created_by/properties/Kind",
+                                "type": "string",
+                                "title": "The Kind Schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "User"
+                                ]
+                            }
+                        }
+                    },
+                    "_created_at": {
+                        "$id": "#/properties/Data/items/properties/_created_at",
+                        "type": "string",
+                        "title": "The _created_at Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "2020-03-09T04:22:11Z"
+                        ]
+                    },
+                    "_activity_id": {
+                        "$id": "#/properties/Data/items/properties/_activity_id",
+                        "type": "string",
+                        "title": "The _activity_id Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Activity_aKsEtFXs"
+                        ]
+                    },
+                    "_activity_instance_id": {
+                        "$id": "#/properties/Data/items/properties/_activity_instance_id",
+                        "type": "string",
+                        "title": "The _activity_instance_id Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "PkHjpA7hT6Dr"
+                        ]
+                    }
+                }
+            }
+        },
+        "CardFields": {
+            "$id": "#/properties/CardFields",
+            "type": "array",
+            "title": "The Cardfields Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "items": {
+                "$id": "#/properties/CardFields/items",
+                "type": "object",
+                "title": "The Items Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                    {
+                        "Name": "Created By",
+                        "IsSystemField": true,
+                        "Id": "_created_by",
+                        "Model": "SmokeProcess_143",
+                        "Type": "User"
+                    },
+                    {
+                        "Name": "Created At",
+                        "IsSystemField": true,
+                        "Id": "_created_at",
+                        "Model": "SmokeProcess_143",
+                        "Type": "DateTime"
+                    },
+                    {
+                        "Id": "_current_step",
+                        "Model": "SmokeProcess_143",
+                        "Type": "Text",
+                        "Name": "Current Step",
+                        "IsSystemField": true
+                    },
+                    {
+                        "Name": "ExpectedAt",
+                        "IsSystemField": false,
+                        "Id": "ExpectedAt",
+                        "Model": "ActivityInstance",
+                        "Type": "DateTime"
+                    }
+                ],
+                "required": [
+                    "Id",
+                    "Name",
+                    "Type",
+                    "IsSystemField",
+                    "Model"
+                ],
+                "properties": {
+                    "Id": {
+                        "$id": "#/properties/CardFields/items/properties/Id",
+                        "type": "string",
+                        "title": "The Id Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "_created_by"
+                        ]
+                    },
+                    "Name": {
+                        "$id": "#/properties/CardFields/items/properties/Name",
+                        "type": "string",
+                        "title": "The Name Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Created By"
+                        ]
+                    },
+                    "Type": {
+                        "$id": "#/properties/CardFields/items/properties/Type",
+                        "type": "string",
+                        "title": "The Type Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "User"
+                        ]
+                    },
+                    "IsSystemField": {
+                        "$id": "#/properties/CardFields/items/properties/IsSystemField",
+                        "type": "boolean",
+                        "title": "The Issystemfield Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": false,
+                        "examples": [
+                            true
+                        ]
+                    },
+                    "Model": {
+                        "$id": "#/properties/CardFields/items/properties/Model",
+                        "type": "string",
+                        "title": "The Model Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "SmokeProcess_143"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

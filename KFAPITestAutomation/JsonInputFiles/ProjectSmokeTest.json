@@ -1,0 +1,24 @@
+{  "Admin":       "QAGmail",
+      "flowType":       "Project",
+       "flowName":       "SmokeProject", 
+      
+     "NewItem":{
+       "Item1":       "One",
+       "Item2":       "Two",
+       "Item3":       "Three"
+       },
+     "TaskName":{
+       "TaskPlan":       "Plan",
+       "TaskExecute":       "Execute",
+       "TaskCompleted":       "Completed"
+       },
+       "TaskPosition":{
+       "PositionInprog":       "In progress",
+       "PositionOnhold":       "On hold"
+       },
+       "StepNames":{
+       "StepName1":       "Right",
+       "StepName2":       "Left"
+       }
+             
+}  

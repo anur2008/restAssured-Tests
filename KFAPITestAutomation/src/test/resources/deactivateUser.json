@@ -1,0 +1,58 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "array",
+    "title": "The Root Schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "items": {
+        "$id": "#/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "description": "An explanation about the purpose of this instance.",
+        "default": {},
+        "examples": [
+            {
+                "Status": "InActive",
+                "_id": "UsnqLZOC7iYY",
+                "_modified_at": "2020-04-02T14:51:36Z"
+            }
+        ],
+        "required": [
+            "Status",
+            "_id",
+            "_modified_at"
+        ],
+        "properties": {
+            "Status": {
+                "$id": "#/items/properties/Status",
+                "type": "string",
+                "title": "The Status Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    "InActive"
+                ]
+            },
+            "_id": {
+                "$id": "#/items/properties/_id",
+                "type": "string",
+                "title": "The _id Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    "UsnqLZOC7iYY"
+                ]
+            },
+            "_modified_at": {
+                "$id": "#/items/properties/_modified_at",
+                "type": "string",
+                "title": "The _modified_at Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    "2020-04-02T14:51:36Z"
+                ]
+            }
+        }
+    }
+}

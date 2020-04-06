@@ -1,0 +1,69 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "array",
+    "title": "The Root Schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "items": {
+        "$id": "#/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "description": "An explanation about the purpose of this instance.",
+        "default": {},
+        "examples": [
+            {
+                "_id": "SmokeDataset_30_ammj5k-_vk",
+                "_modified_at": "2020-03-27T14:30:25Z",
+                "_previous_id": null,
+                "ThisIsText": "Master"
+            }
+        ],
+        "required": [
+            "ThisIsText",
+            "_id",
+            "_modified_at",
+            "_previous_id"
+        ],
+        "properties": {
+            "ThisIsText": {
+                "$id": "#/items/properties/ThisIsText",
+                "type": "string",
+                "title": "The Thisistext Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    "Master"
+                ]
+            },
+            "_id": {
+                "$id": "#/items/properties/_id",
+                "type": "string",
+                "title": "The _id Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    "SmokeDataset_30_ammj5k-_vk"
+                ]
+            },
+            "_modified_at": {
+                "$id": "#/items/properties/_modified_at",
+                "type": "string",
+                "title": "The _modified_at Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    "2020-03-27T14:30:25Z"
+                ]
+            },
+            "_previous_id": {
+                "$id": "#/items/properties/_previous_id",
+                "title": "The _previous_id Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": null,
+                "examples": [
+                    null
+                ]
+            }
+        }
+    }
+}

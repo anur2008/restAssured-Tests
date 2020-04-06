@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ProcessApiTest(failed)">
+    <classes>
+      <class name="test.KFProcessAPISmokeTest">
+        <methods>
+          <include name="getProcessItemList"/>
+          <include name="rejectItem"/>
+          <include name="getProgressDetails"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="completeProcessTest"/>
+          <include name="addImgasUserToFormField"/>
+          <include name="getItemDetailsOfWFstep"/>
+          <include name="getProcessItemDetails"/>
+          <include name="addAttachmentasUserToFormField"/>
+          <include name="addAttachmentToTable"/>
+          <include name="getStatusProcessItems" invocation-numbers="1 2"/>
+        </methods>
+      </class> <!-- test.KFProcessAPISmokeTest -->
+    </classes>
+  </test> <!-- ProcessApiTest(failed) -->
+  <test thread-count="5" name="DSApiTest(failed)">
+    <classes>
+      <class name="test.KFDSAPISmokeTest">
+        <methods>
+          <include name="listAllFlows"/>
+          <include name="setUp"/>
+          <include name="DelDS"/>
+        </methods>
+      </class> <!-- test.KFDSAPISmokeTest -->
+    </classes>
+  </test> <!-- DSApiTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

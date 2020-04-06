@@ -1,0 +1,10 @@
+
+{
+	"flowType": "Dataset",
+	"flowName": "SmokeDataset",
+	"DSimportData": {
+		"FieldType": "Attachment",
+		"FieldName": "ThisIsAttach",
+		"FieldValue": "/src/main/java/org/kissflow/qa/utils/4999Records.csv"
+	}
+}

@@ -1,0 +1,22 @@
+{  "GmailUserName":       "kfqatest@gmail.com",
+      "GmailPassword":       "Kissflow123",
+       "YahooUserName":       "kfqatest@yahoo.com",
+       "YahooPassword":       "Kissflow123",
+      "OutlookUserName":       "kfqatest1@outlook.com",
+       "OutlookPassword":       "Kissflow123",
+             
+
+"Groups":
+{
+"Name":"Test","Users":[{"_id":"UsoeANVSzy2F"}],"Groups":[]},
+
+"ListGroup":
+{
+  "Sort": [
+    {
+      "Id": "FirstName",
+      "Name": "ASC"
+    }
+  ]
+}
+}

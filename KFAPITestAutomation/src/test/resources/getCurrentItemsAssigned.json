@@ -1,0 +1,476 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The Root Schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "required": [
+        "_id",
+        "Data",
+        "Columns",
+        "Fields",
+        "Filter",
+        "Sort",
+        "PageSize"
+    ],
+    "properties": {
+        "_id": {
+            "$id": "#/properties/_id",
+            "type": "string",
+            "title": "The _id Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "GlobalPendingActions"
+            ]
+        },
+        "Data": {
+            "$id": "#/properties/Data",
+            "type": "array",
+            "title": "The Data Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "items": {
+                "$id": "#/properties/Data/items",
+                "type": "object",
+                "title": "The Items Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                    {
+                        "_created_by": {
+                            "_id": "UsoeANVSzy2F",
+                            "Kind": "User",
+                            "Name": "KF QA"
+                        },
+                        "_activity_instance_id": "Pk93jXwAKser",
+                        "FlowId": "SmokeProcess_149",
+                        "_created_at": "2020-03-31T06:36:48Z",
+                        "FlowName": "SmokeProcess",
+                        "_current_step": "Approval1",
+                        "Name": "Request for SmokeProcess",
+                        "FlowType": "process",
+                        "_id": "Pk0hLM52pm9Z"
+                    }
+                ],
+                "required": [
+                    "_id",
+                    "Name",
+                    "FlowName",
+                    "FlowType",
+                    "FlowId",
+                    "_current_step",
+                    "_created_by",
+                    "_created_at",
+                    "_activity_instance_id"
+                ],
+                "properties": {
+                    "_id": {
+                        "$id": "#/properties/Data/items/properties/_id",
+                        "type": "string",
+                        "title": "The _id Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Pk0hLM52pm9Z"
+                        ]
+                    },
+                    "Name": {
+                        "$id": "#/properties/Data/items/properties/Name",
+                        "type": "string",
+                        "title": "The Name Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Request for SmokeProcess"
+                        ]
+                    },
+                    "FlowName": {
+                        "$id": "#/properties/Data/items/properties/FlowName",
+                        "type": "string",
+                        "title": "The Flowname Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "SmokeProcess"
+                        ]
+                    },
+                    "FlowType": {
+                        "$id": "#/properties/Data/items/properties/FlowType",
+                        "type": "string",
+                        "title": "The Flowtype Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "process"
+                        ]
+                    },
+                    "FlowId": {
+                        "$id": "#/properties/Data/items/properties/FlowId",
+                        "type": "string",
+                        "title": "The Flowid Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "SmokeProcess_149"
+                        ]
+                    },
+                    "_current_step": {
+                        "$id": "#/properties/Data/items/properties/_current_step",
+                        "type": "string",
+                        "title": "The _current_step Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Approval1"
+                        ]
+                    },
+                    "_created_by": {
+                        "$id": "#/properties/Data/items/properties/_created_by",
+                        "type": "object",
+                        "title": "The _created_by Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "Name": "KF QA",
+                                "_id": "UsoeANVSzy2F",
+                                "Kind": "User"
+                            }
+                        ],
+                        "required": [
+                            "Kind",
+                            "_id",
+                            "Name"
+                        ],
+                        "properties": {
+                            "Kind": {
+                                "$id": "#/properties/Data/items/properties/_created_by/properties/Kind",
+                                "type": "string",
+                                "title": "The Kind Schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "User"
+                                ]
+                            },
+                            "_id": {
+                                "$id": "#/properties/Data/items/properties/_created_by/properties/_id",
+                                "type": "string",
+                                "title": "The _id Schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "UsoeANVSzy2F"
+                                ]
+                            },
+                            "Name": {
+                                "$id": "#/properties/Data/items/properties/_created_by/properties/Name",
+                                "type": "string",
+                                "title": "The Name Schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "KF QA"
+                                ]
+                            }
+                        }
+                    },
+                    "_created_at": {
+                        "$id": "#/properties/Data/items/properties/_created_at",
+                        "type": "string",
+                        "title": "The _created_at Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "2020-03-31T06:36:48Z"
+                        ]
+                    },
+                    "_activity_instance_id": {
+                        "$id": "#/properties/Data/items/properties/_activity_instance_id",
+                        "type": "string",
+                        "title": "The _activity_instance_id Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Pk93jXwAKser"
+                        ]
+                    }
+                }
+            }
+        },
+        "Columns": {
+            "$id": "#/properties/Columns",
+            "type": "array",
+            "title": "The Columns Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "items": {
+                "$id": "#/properties/Columns/items",
+                "type": "object",
+                "title": "The Items Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                    {
+                        "Id": "Name",
+                        "Type": "Text",
+                        "Name": "Item Title",
+                        "ReadOnly": true,
+                        "FilterKey": "Name"
+                    },
+                    {
+                        "FilterKey": "FlowName",
+                        "Id": "FlowName",
+                        "Type": "Text",
+                        "Name": "Flow Name",
+                        "ReadOnly": true
+                    },
+                    {
+                        "Name": "Flow Type",
+                        "ReadOnly": true,
+                        "FilterKey": "FlowType",
+                        "Id": "FlowType",
+                        "Type": "Text"
+                    },
+                    {
+                        "Name": "Step Name",
+                        "ReadOnly": true,
+                        "depends_on": "_item_status_instances",
+                        "Type": "Text",
+                        "FilterKey": "_item_status_instances._current_step.keyword",
+                        "DBType": "nested",
+                        "Id": "_current_step"
+                    },
+                    {
+                        "Name": "Initiated by",
+                        "ReadOnly": true,
+                        "FilterKey": "_created_by.Name",
+                        "Id": "_created_by",
+                        "Type": "User"
+                    },
+                    {
+                        "Id": "_created_at",
+                        "Type": "DateTime",
+                        "Name": "Created At",
+                        "ReadOnly": true,
+                        "FilterKey": "_created_at.dv"
+                    },
+                    {
+                        "Name": "Due Date",
+                        "ReadOnly": true,
+                        "depends_on": "_item_status_instances",
+                        "Type": "DateTime",
+                        "FilterKey": "_item_status_instances._due_date.dv",
+                        "DBType": "nested",
+                        "Id": "_due_date"
+                    }
+                ],
+                "required": [
+                    "Id",
+                    "Name",
+                    "Type",
+                    "ReadOnly",
+                    "FilterKey"
+                ],
+                "properties": {
+                    "Id": {
+                        "$id": "#/properties/Columns/items/properties/Id",
+                        "type": "string",
+                        "title": "The Id Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Name"
+                        ]
+                    },
+                    "Name": {
+                        "$id": "#/properties/Columns/items/properties/Name",
+                        "type": "string",
+                        "title": "The Name Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Item Title"
+                        ]
+                    },
+                    "Type": {
+                        "$id": "#/properties/Columns/items/properties/Type",
+                        "type": "string",
+                        "title": "The Type Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Text"
+                        ]
+                    },
+                    "ReadOnly": {
+                        "$id": "#/properties/Columns/items/properties/ReadOnly",
+                        "type": "boolean",
+                        "title": "The Readonly Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": false,
+                        "examples": [
+                            true
+                        ]
+                    },
+                    "FilterKey": {
+                        "$id": "#/properties/Columns/items/properties/FilterKey",
+                        "type": "string",
+                        "title": "The Filterkey Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Name"
+                        ]
+                    }
+                }
+            }
+        },
+        "Fields": {
+            "$id": "#/properties/Fields",
+            "type": "array",
+            "title": "The Fields Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "items": {
+                "$id": "#/properties/Fields/items",
+                "type": "object",
+                "title": "The Items Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                    {
+                        "Name": "Item Title",
+                        "ReadOnly": true,
+                        "FilterKey": "Name",
+                        "Id": "Name",
+                        "Type": "Text"
+                    },
+                    {
+                        "FilterKey": "FlowName",
+                        "Id": "FlowName",
+                        "Type": "Text",
+                        "Name": "Flow Name",
+                        "ReadOnly": true
+                    },
+                    {
+                        "Name": "Flow Type",
+                        "ReadOnly": true,
+                        "FilterKey": "FlowType",
+                        "Id": "FlowType",
+                        "Type": "Text"
+                    },
+                    {
+                        "Name": "Step Name",
+                        "ReadOnly": true,
+                        "depends_on": "_item_status_instances",
+                        "Type": "Text",
+                        "FilterKey": "_item_status_instances._current_step.keyword",
+                        "DBType": "nested",
+                        "Id": "_current_step"
+                    },
+                    {
+                        "Name": "Created At",
+                        "ReadOnly": true,
+                        "FilterKey": "_created_at.dv",
+                        "Id": "_created_at",
+                        "Type": "DateTime"
+                    },
+                    {
+                        "FilterKey": "_item_status_instances._due_date.dv",
+                        "DBType": "nested",
+                        "Id": "_due_date",
+                        "Name": "Due Date",
+                        "ReadOnly": true,
+                        "depends_on": "_item_status_instances",
+                        "Type": "DateTime"
+                    }
+                ],
+                "required": [
+                    "Id",
+                    "Name",
+                    "Type",
+                    "ReadOnly",
+                    "FilterKey"
+                ],
+                "properties": {
+                    "Id": {
+                        "$id": "#/properties/Fields/items/properties/Id",
+                        "type": "string",
+                        "title": "The Id Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Name"
+                        ]
+                    },
+                    "Name": {
+                        "$id": "#/properties/Fields/items/properties/Name",
+                        "type": "string",
+                        "title": "The Name Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Item Title"
+                        ]
+                    },
+                    "Type": {
+                        "$id": "#/properties/Fields/items/properties/Type",
+                        "type": "string",
+                        "title": "The Type Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Text"
+                        ]
+                    },
+                    "ReadOnly": {
+                        "$id": "#/properties/Fields/items/properties/ReadOnly",
+                        "type": "boolean",
+                        "title": "The Readonly Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": false,
+                        "examples": [
+                            true
+                        ]
+                    },
+                    "FilterKey": {
+                        "$id": "#/properties/Fields/items/properties/FilterKey",
+                        "type": "string",
+                        "title": "The Filterkey Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Name"
+                        ]
+                    }
+                }
+            }
+        },
+        "Filter": {
+            "$id": "#/properties/Filter",
+            "type": "array",
+            "title": "The Filter Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": []
+        },
+        "Sort": {
+            "$id": "#/properties/Sort",
+            "type": "array",
+            "title": "The Sort Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": []
+        },
+        "PageSize": {
+            "$id": "#/properties/PageSize",
+            "type": "integer",
+            "title": "The Pagesize Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                5
+            ]
+        }
+    }
+}

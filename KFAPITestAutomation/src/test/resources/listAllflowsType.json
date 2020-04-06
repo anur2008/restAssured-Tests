@@ -1,0 +1,186 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "array",
+    "title": "The Root Schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "items": {
+        "$id": "#/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "description": "An explanation about the purpose of this instance.",
+        "default": {},
+        "examples": [
+            {
+                "_id": "DS_001",
+                "_created_by": {
+                    "Name": "Anuradha Raman",
+                    "_id": "UsJvAN7lSBKC"
+                },
+                "Type": "Dataset",
+                "_created_at": "Mon, 23 Mar 2020 13:36:36 GMT",
+                "Status": "Live",
+                "Description": "",
+                "Name": "DS-001"
+            },
+            {
+                "_created_at": "Mon, 23 Mar 2020 17:51:04 GMT",
+                "Status": "Live",
+                "Description": "",
+                "Name": "test",
+                "_id": "test",
+                "_created_by": {
+                    "Name": "Anuradha Raman",
+                    "_id": "UsJvAN7lSBKC"
+                },
+                "Type": "Dataset"
+            },
+            {
+                "Type": "Dataset",
+                "_created_at": "Mon, 23 Mar 2020 18:00:58 GMT",
+                "Status": "Live",
+                "Description": "",
+                "Name": "test123",
+                "_id": "test123",
+                "_created_by": {
+                    "_id": "UsoeANVSzy2F",
+                    "Name": "KF QA"
+                }
+            },
+            {
+                "_id": "Anu_DS_2021",
+                "_created_by": {
+                    "Name": "KF QA",
+                    "_id": "UsoeANVSzy2F"
+                },
+                "Type": "Dataset",
+                "_created_at": "Thu, 26 Mar 2020 07:30:49 GMT",
+                "Status": "Live",
+                "Description": "",
+                "Name": "Anu-DS-2020"
+            },
+            {
+                "_created_at": "Sat, 28 Mar 2020 14:26:08 GMT",
+                "Status": "Live",
+                "Description": "",
+                "Name": "SmokeDataset",
+                "_id": "SmokeDataset_32",
+                "_created_by": {
+                    "Name": "KF QA",
+                    "_id": "UsoeANVSzy2F"
+                },
+                "Type": "Dataset"
+            }
+        ],
+        "required": [
+            "Description",
+            "Name",
+            "Status",
+            "Type",
+            "_created_at",
+            "_created_by",
+            "_id"
+        ],
+        "properties": {
+            "Description": {
+                "$id": "#/items/properties/Description",
+                "type": "string",
+                "title": "The Description Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    ""
+                ]
+            },
+            "Name": {
+                "$id": "#/items/properties/Name",
+                "type": "string",
+                "title": "The Name Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    "DS-001"
+                ]
+            },
+            "Status": {
+                "$id": "#/items/properties/Status",
+                "type": "string",
+                "title": "The Status Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    "Live"
+                ]
+            },
+            "Type": {
+                "$id": "#/items/properties/Type",
+                "type": "string",
+                "title": "The Type Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    "Dataset"
+                ]
+            },
+            "_created_at": {
+                "$id": "#/items/properties/_created_at",
+                "type": "string",
+                "title": "The _created_at Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    "Mon, 23 Mar 2020 13:36:36 GMT"
+                ]
+            },
+            "_created_by": {
+                "$id": "#/items/properties/_created_by",
+                "type": "object",
+                "title": "The _created_by Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                    {
+                        "Name": "Anuradha Raman",
+                        "_id": "UsJvAN7lSBKC"
+                    }
+                ],
+                "required": [
+                    "Name",
+                    "_id"
+                ],
+                "properties": {
+                    "Name": {
+                        "$id": "#/items/properties/_created_by/properties/Name",
+                        "type": "string",
+                        "title": "The Name Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Anuradha Raman"
+                        ]
+                    },
+                    "_id": {
+                        "$id": "#/items/properties/_created_by/properties/_id",
+                        "type": "string",
+                        "title": "The _id Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "UsJvAN7lSBKC"
+                        ]
+                    }
+                }
+            },
+            "_id": {
+                "$id": "#/items/properties/_id",
+                "type": "string",
+                "title": "The _id Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    "DS_001"
+                ]
+            }
+        }
+    }
+}

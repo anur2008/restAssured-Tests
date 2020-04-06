@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="1" name="ProcessApiTest">
+		<classes>
+			<!-- <class name="test.ProcessSmokeTest" /> <class name="test.ProjectSmokeTest" 
+				/> <class name="test.CaseSmokeTest" /> <class name="test.ChannelSmokeTest" 
+				/> -->
+			<class name="test.KFProcessAPISmokeTest" />
+		</classes>
+	</test>
+
+	<test thread-count="1" name="ChannelApiTest">
+		<classes>
+			<class name="test.KFChannelAPISmokeTest" />
+		</classes>
+	</test>
+	<test thread-count="1" name="UserApiTest">
+		<classes>
+			<class name="test.KFUserAPISmokeTest" />
+		</classes>
+	</test>
+	<test thread-count="1" name="DSApiTest">
+		<classes>
+			<class name="test.KFDSAPISmokeTest" />
+
+		</classes>
+	</test>
+	<!-- Test -->
+
+</suite> <!-- Suite -->

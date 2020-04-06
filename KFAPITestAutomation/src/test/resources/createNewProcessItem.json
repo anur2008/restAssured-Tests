@@ -1,0 +1,44 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The Root Schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "required": [
+        "ModelId",
+        "_activity_instance_id",
+        "_id"
+    ],
+    "properties": {
+        "ModelId": {
+            "$id": "#/properties/ModelId",
+            "type": "string",
+            "title": "The Modelid Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "SmokeProcess_143"
+            ]
+        },
+        "_activity_instance_id": {
+            "$id": "#/properties/_activity_instance_id",
+            "type": "string",
+            "title": "The _activity_instance_id Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Pkc0Jzwd778B"
+            ]
+        },
+        "_id": {
+            "$id": "#/properties/_id",
+            "type": "string",
+            "title": "The _id Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Pka9Jzwd7VHT"
+            ]
+        }
+    }
+}

@@ -1,0 +1,646 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "array",
+    "title": "The Root Schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "items": {
+        "$id": "#/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "description": "An explanation about the purpose of this instance.",
+        "default": {},
+        "examples": [
+            {
+                "ChannelId": "SmokeChannel_65",
+                "_id": "PoCDVyre36RH",
+                "IsPinned": false,
+                "_created_at": "2020-03-23T07:08:05Z",
+                "Content": [
+                    {
+                        "nodes": [
+                            {
+                                "text": "Tomorrow is Holiday be happy:)",
+                                "type": "text"
+                            }
+                        ],
+                        "data": {},
+                        "type": "paragraph"
+                    }
+                ],
+                "CardMessage": {
+                    "args": {
+                        "channel_name": {
+                            "text": "SmokeChannel",
+                            "id": "SmokeChannel_65",
+                            "type": "channel"
+                        },
+                        "created_by": {
+                            "text": "KF QA",
+                            "id": "UsoeANVSzy2F",
+                            "type": "user"
+                        }
+                    },
+                    "template": "{created_by} made an announcement in {channel_name}",
+                    "notification_message": "KF QA made an announcement in SmokeChannel"
+                },
+                "InstanceType": "post",
+                "EntityId": "PoCDVyre36RH",
+                "IsComment": false,
+                "IsAnnouncement": true,
+                "FlowType": "channel",
+                "_modified_at": "2020-03-23T07:08:05Z",
+                "_created_by": {
+                    "Kind": "User",
+                    "Name": "KF QA",
+                    "_id": "UsoeANVSzy2F"
+                },
+                "ScheduledAt": {
+                    "StartDate": "",
+                    "EndDate": ""
+                },
+                "FlowId": "SmokeChannel_65",
+                "InstanceId": "PoCDVyre36RH",
+                "_modified_by": {
+                    "Name": "KF QA",
+                    "_id": "UsoeANVSzy2F",
+                    "Kind": "User"
+                },
+                "EntityType": "post"
+            }
+        ],
+        "required": [
+            "CardMessage",
+            "ChannelId",
+            "Content",
+            "EntityId",
+            "EntityType",
+            "FlowId",
+            "FlowType",
+            "InstanceId",
+            "InstanceType",
+            "IsAnnouncement",
+            "IsComment",
+            "IsPinned",
+            "ScheduledAt",
+            "_created_at",
+            "_created_by",
+            "_id",
+            "_modified_at",
+            "_modified_by"
+        ],
+        "properties": {
+            "CardMessage": {
+                "$id": "#/items/properties/CardMessage",
+                "type": "object",
+                "title": "The Cardmessage Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                    {
+                        "notification_message": "KF QA made an announcement in SmokeChannel",
+                        "args": {
+                            "channel_name": {
+                                "id": "SmokeChannel_65",
+                                "type": "channel",
+                                "text": "SmokeChannel"
+                            },
+                            "created_by": {
+                                "id": "UsoeANVSzy2F",
+                                "type": "user",
+                                "text": "KF QA"
+                            }
+                        },
+                        "template": "{created_by} made an announcement in {channel_name}"
+                    }
+                ],
+                "required": [
+                    "args",
+                    "notification_message",
+                    "template"
+                ],
+                "properties": {
+                    "args": {
+                        "$id": "#/items/properties/CardMessage/properties/args",
+                        "type": "object",
+                        "title": "The Args Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "created_by": {
+                                    "id": "UsoeANVSzy2F",
+                                    "type": "user",
+                                    "text": "KF QA"
+                                },
+                                "channel_name": {
+                                    "id": "SmokeChannel_65",
+                                    "type": "channel",
+                                    "text": "SmokeChannel"
+                                }
+                            }
+                        ],
+                        "required": [
+                            "channel_name",
+                            "created_by"
+                        ],
+                        "properties": {
+                            "channel_name": {
+                                "$id": "#/items/properties/CardMessage/properties/args/properties/channel_name",
+                                "type": "object",
+                                "title": "The Channel_name Schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "id": "SmokeChannel_65",
+                                        "type": "channel",
+                                        "text": "SmokeChannel"
+                                    }
+                                ],
+                                "required": [
+                                    "id",
+                                    "text",
+                                    "type"
+                                ],
+                                "properties": {
+                                    "id": {
+                                        "$id": "#/items/properties/CardMessage/properties/args/properties/channel_name/properties/id",
+                                        "type": "string",
+                                        "title": "The Id Schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "SmokeChannel_65"
+                                        ]
+                                    },
+                                    "text": {
+                                        "$id": "#/items/properties/CardMessage/properties/args/properties/channel_name/properties/text",
+                                        "type": "string",
+                                        "title": "The Text Schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "SmokeChannel"
+                                        ]
+                                    },
+                                    "type": {
+                                        "$id": "#/items/properties/CardMessage/properties/args/properties/channel_name/properties/type",
+                                        "type": "string",
+                                        "title": "The Type Schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "channel"
+                                        ]
+                                    }
+                                }
+                            },
+                            "created_by": {
+                                "$id": "#/items/properties/CardMessage/properties/args/properties/created_by",
+                                "type": "object",
+                                "title": "The Created_by Schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "id": "UsoeANVSzy2F",
+                                        "type": "user",
+                                        "text": "KF QA"
+                                    }
+                                ],
+                                "required": [
+                                    "id",
+                                    "text",
+                                    "type"
+                                ],
+                                "properties": {
+                                    "id": {
+                                        "$id": "#/items/properties/CardMessage/properties/args/properties/created_by/properties/id",
+                                        "type": "string",
+                                        "title": "The Id Schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "UsoeANVSzy2F"
+                                        ]
+                                    },
+                                    "text": {
+                                        "$id": "#/items/properties/CardMessage/properties/args/properties/created_by/properties/text",
+                                        "type": "string",
+                                        "title": "The Text Schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "KF QA"
+                                        ]
+                                    },
+                                    "type": {
+                                        "$id": "#/items/properties/CardMessage/properties/args/properties/created_by/properties/type",
+                                        "type": "string",
+                                        "title": "The Type Schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "user"
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "notification_message": {
+                        "$id": "#/items/properties/CardMessage/properties/notification_message",
+                        "type": "string",
+                        "title": "The Notification_message Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "KF QA made an announcement in SmokeChannel"
+                        ]
+                    },
+                    "template": {
+                        "$id": "#/items/properties/CardMessage/properties/template",
+                        "type": "string",
+                        "title": "The Template Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "{created_by} made an announcement in {channel_name}"
+                        ]
+                    }
+                }
+            },
+            "ChannelId": {
+                "$id": "#/items/properties/ChannelId",
+                "type": "string",
+                "title": "The Channelid Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    "SmokeChannel_65"
+                ]
+            },
+            "Content": {
+                "$id": "#/items/properties/Content",
+                "type": "array",
+                "title": "The Content Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "items": {
+                    "$id": "#/items/properties/Content/items",
+                    "type": "object",
+                    "title": "The Items Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "nodes": [
+                                {
+                                    "text": "Tomorrow is Holiday be happy:)",
+                                    "type": "text"
+                                }
+                            ],
+                            "data": {},
+                            "type": "paragraph"
+                        }
+                    ],
+                    "required": [
+                        "data",
+                        "nodes",
+                        "type"
+                    ],
+                    "properties": {
+                        "data": {
+                            "$id": "#/items/properties/Content/items/properties/data",
+                            "type": "object",
+                            "title": "The Data Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {}
+                            ]
+                        },
+                        "nodes": {
+                            "$id": "#/items/properties/Content/items/properties/nodes",
+                            "type": "array",
+                            "title": "The Nodes Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": [],
+                            "items": {
+                                "$id": "#/items/properties/Content/items/properties/nodes/items",
+                                "type": "object",
+                                "title": "The Items Schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "type": "text",
+                                        "text": "Tomorrow is Holiday be happy:)"
+                                    }
+                                ],
+                                "required": [
+                                    "text",
+                                    "type"
+                                ],
+                                "properties": {
+                                    "text": {
+                                        "$id": "#/items/properties/Content/items/properties/nodes/items/properties/text",
+                                        "type": "string",
+                                        "title": "The Text Schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "Tomorrow is Holiday be happy:)"
+                                        ]
+                                    },
+                                    "type": {
+                                        "$id": "#/items/properties/Content/items/properties/nodes/items/properties/type",
+                                        "type": "string",
+                                        "title": "The Type Schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "text"
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "type": {
+                            "$id": "#/items/properties/Content/items/properties/type",
+                            "type": "string",
+                            "title": "The Type Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "paragraph"
+                            ]
+                        }
+                    }
+                }
+            },
+            "EntityId": {
+                "$id": "#/items/properties/EntityId",
+                "type": "string",
+                "title": "The Entityid Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    "PoCDVyre36RH"
+                ]
+            },
+            "EntityType": {
+                "$id": "#/items/properties/EntityType",
+                "type": "string",
+                "title": "The Entitytype Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    "post"
+                ]
+            },
+            "FlowId": {
+                "$id": "#/items/properties/FlowId",
+                "type": "string",
+                "title": "The Flowid Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    "SmokeChannel_65"
+                ]
+            },
+            "FlowType": {
+                "$id": "#/items/properties/FlowType",
+                "type": "string",
+                "title": "The Flowtype Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    "channel"
+                ]
+            },
+            "InstanceId": {
+                "$id": "#/items/properties/InstanceId",
+                "type": "string",
+                "title": "The Instanceid Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    "PoCDVyre36RH"
+                ]
+            },
+            "InstanceType": {
+                "$id": "#/items/properties/InstanceType",
+                "type": "string",
+                "title": "The Instancetype Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    "post"
+                ]
+            },
+            "IsAnnouncement": {
+                "$id": "#/items/properties/IsAnnouncement",
+                "type": "boolean",
+                "title": "The Isannouncement Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": false,
+                "examples": [
+                    true
+                ]
+            },
+            "IsComment": {
+                "$id": "#/items/properties/IsComment",
+                "type": "boolean",
+                "title": "The Iscomment Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": false,
+                "examples": [
+                    false
+                ]
+            },
+            "IsPinned": {
+                "$id": "#/items/properties/IsPinned",
+                "type": "boolean",
+                "title": "The Ispinned Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": false,
+                "examples": [
+                    false
+                ]
+            },
+            "ScheduledAt": {
+                "$id": "#/items/properties/ScheduledAt",
+                "type": "object",
+                "title": "The Scheduledat Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                    {
+                        "StartDate": "",
+                        "EndDate": ""
+                    }
+                ],
+                "required": [
+                    "EndDate",
+                    "StartDate"
+                ],
+                "properties": {
+                    "EndDate": {
+                        "$id": "#/items/properties/ScheduledAt/properties/EndDate",
+                        "type": "string",
+                        "title": "The Enddate Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            ""
+                        ]
+                    },
+                    "StartDate": {
+                        "$id": "#/items/properties/ScheduledAt/properties/StartDate",
+                        "type": "string",
+                        "title": "The Startdate Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            ""
+                        ]
+                    }
+                }
+            },
+            "_created_at": {
+                "$id": "#/items/properties/_created_at",
+                "type": "string",
+                "title": "The _created_at Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    "2020-03-23T07:08:05Z"
+                ]
+            },
+            "_created_by": {
+                "$id": "#/items/properties/_created_by",
+                "type": "object",
+                "title": "The _created_by Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                    {
+                        "Name": "KF QA",
+                        "_id": "UsoeANVSzy2F",
+                        "Kind": "User"
+                    }
+                ],
+                "required": [
+                    "Kind",
+                    "Name",
+                    "_id"
+                ],
+                "properties": {
+                    "Kind": {
+                        "$id": "#/items/properties/_created_by/properties/Kind",
+                        "type": "string",
+                        "title": "The Kind Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "User"
+                        ]
+                    },
+                    "Name": {
+                        "$id": "#/items/properties/_created_by/properties/Name",
+                        "type": "string",
+                        "title": "The Name Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "KF QA"
+                        ]
+                    },
+                    "_id": {
+                        "$id": "#/items/properties/_created_by/properties/_id",
+                        "type": "string",
+                        "title": "The _id Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "UsoeANVSzy2F"
+                        ]
+                    }
+                }
+            },
+            "_id": {
+                "$id": "#/items/properties/_id",
+                "type": "string",
+                "title": "The _id Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    "PoCDVyre36RH"
+                ]
+            },
+            "_modified_at": {
+                "$id": "#/items/properties/_modified_at",
+                "type": "string",
+                "title": "The _modified_at Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    "2020-03-23T07:08:05Z"
+                ]
+            },
+            "_modified_by": {
+                "$id": "#/items/properties/_modified_by",
+                "type": "object",
+                "title": "The _modified_by Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                    {
+                        "Name": "KF QA",
+                        "_id": "UsoeANVSzy2F",
+                        "Kind": "User"
+                    }
+                ],
+                "required": [
+                    "Kind",
+                    "Name",
+                    "_id"
+                ],
+                "properties": {
+                    "Kind": {
+                        "$id": "#/items/properties/_modified_by/properties/Kind",
+                        "type": "string",
+                        "title": "The Kind Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "User"
+                        ]
+                    },
+                    "Name": {
+                        "$id": "#/items/properties/_modified_by/properties/Name",
+                        "type": "string",
+                        "title": "The Name Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "KF QA"
+                        ]
+                    },
+                    "_id": {
+                        "$id": "#/items/properties/_modified_by/properties/_id",
+                        "type": "string",
+                        "title": "The _id Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "UsoeANVSzy2F"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

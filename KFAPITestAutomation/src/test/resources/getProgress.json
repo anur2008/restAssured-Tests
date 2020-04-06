@@ -1,0 +1,323 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The Root Schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "required": [
+        "ProcessId",
+        "ProcessName",
+        "Steps",
+        "_id",
+        "_last_completed_step",
+        "_progress",
+        "_stage",
+        "_status"
+    ],
+    "properties": {
+        "ProcessId": {
+            "$id": "#/properties/ProcessId",
+            "type": "string",
+            "title": "The Processid Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Pk3ypNKilFTf"
+            ]
+        },
+        "ProcessName": {
+            "$id": "#/properties/ProcessName",
+            "type": "string",
+            "title": "The Processname Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Workflow"
+            ]
+        },
+        "Steps": {
+            "$id": "#/properties/Steps",
+            "type": "array",
+            "title": "The Steps Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "items": {
+                "$id": "#/properties/Steps/items",
+                "type": "object",
+                "title": "The Items Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                    {
+                        "AssignedTo": [
+                            {
+                                "_id": "UsxpYqHRxe19",
+                                "Kind": "User",
+                                "Name": "QAYahoo UserAdmin"
+                            }
+                        ],
+                        "ActedAt": null,
+                        "_activity_instance_id": "Pkr_pNKiFKdn",
+                        "NodeType": "StartEvent",
+                        "Id": "Activity_shMrRaeH3",
+                        "_stage": 0.0,
+                        "Name": "Start",
+                        "_note": null,
+                        "_status": "Draft"
+                    },
+                    {
+                        "AssignedTo": [
+                            {
+                                "DelegatedTo": null,
+                                "Kind": "User",
+                                "Name": "QAOutlook User",
+                                "_id": "UszVYqHGQGRs"
+                            },
+                            {
+                                "_id": "UsxpYqHRxe19",
+                                "DelegatedTo": null,
+                                "Kind": "User",
+                                "Name": "QAYahoo UserAdmin"
+                            }
+                        ],
+                        "Id": "Activity_2vxVbfA7",
+                        "Name": "Approval1",
+                        "_status": "NotStarted",
+                        "NodeType": "MultiUserTask"
+                    },
+                    {
+                        "Name": "Approval2",
+                        "_status": "NotStarted",
+                        "NodeType": "MultiUserTask",
+                        "AssignedTo": [
+                            {
+                                "_id": "UszVYqHGQGRs",
+                                "DelegatedTo": null,
+                                "Kind": "User",
+                                "Name": "QAOutlook User"
+                            },
+                            {
+                                "Name": "QAYahoo UserAdmin",
+                                "_id": "UsxpYqHRxe19",
+                                "DelegatedTo": null,
+                                "Kind": "User"
+                            }
+                        ],
+                        "Id": "Activity_02XHlQky"
+                    },
+                    {
+                        "NodeType": "EndEvent",
+                        "AssignedTo": [
+                            {
+                                "_id": "UsxpYqHRxe19",
+                                "Kind": "User",
+                                "Name": "QAYahoo UserAdmin"
+                            }
+                        ],
+                        "Id": "Activity_bpB2CkkF_",
+                        "Name": "Completed",
+                        "_status": "NotStarted"
+                    }
+                ],
+                "required": [
+                    "ActedAt",
+                    "AssignedTo",
+                    "Id",
+                    "Name",
+                    "NodeType",
+                    "_activity_instance_id",
+                    "_note",
+                    "_stage",
+                    "_status"
+                ],
+                "properties": {
+                    "ActedAt": {
+                        "$id": "#/properties/Steps/items/properties/ActedAt",
+                        "title": "The Actedat Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": null,
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "AssignedTo": {
+                        "$id": "#/properties/Steps/items/properties/AssignedTo",
+                        "type": "array",
+                        "title": "The Assignedto Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": [],
+                        "items": {
+                            "$id": "#/properties/Steps/items/properties/AssignedTo/items",
+                            "type": "object",
+                            "title": "The Items Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "_id": "UsxpYqHRxe19",
+                                    "Kind": "User",
+                                    "Name": "QAYahoo UserAdmin"
+                                }
+                            ],
+                            "required": [
+                                "Kind",
+                                "Name",
+                                "_id"
+                            ],
+                            "properties": {
+                                "Kind": {
+                                    "$id": "#/properties/Steps/items/properties/AssignedTo/items/properties/Kind",
+                                    "type": "string",
+                                    "title": "The Kind Schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "User"
+                                    ]
+                                },
+                                "Name": {
+                                    "$id": "#/properties/Steps/items/properties/AssignedTo/items/properties/Name",
+                                    "type": "string",
+                                    "title": "The Name Schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "QAYahoo UserAdmin"
+                                    ]
+                                },
+                                "_id": {
+                                    "$id": "#/properties/Steps/items/properties/AssignedTo/items/properties/_id",
+                                    "type": "string",
+                                    "title": "The _id Schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "UsxpYqHRxe19"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "Id": {
+                        "$id": "#/properties/Steps/items/properties/Id",
+                        "type": "string",
+                        "title": "The Id Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Activity_shMrRaeH3"
+                        ]
+                    },
+                    "Name": {
+                        "$id": "#/properties/Steps/items/properties/Name",
+                        "type": "string",
+                        "title": "The Name Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Start"
+                        ]
+                    },
+                    "NodeType": {
+                        "$id": "#/properties/Steps/items/properties/NodeType",
+                        "type": "string",
+                        "title": "The Nodetype Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "StartEvent"
+                        ]
+                    },
+                    "_activity_instance_id": {
+                        "$id": "#/properties/Steps/items/properties/_activity_instance_id",
+                        "type": "string",
+                        "title": "The _activity_instance_id Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Pkr_pNKiFKdn"
+                        ]
+                    },
+                    "_note": {
+                        "$id": "#/properties/Steps/items/properties/_note",
+                        "title": "The _note Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": null,
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "_stage": {
+                        "$id": "#/properties/Steps/items/properties/_stage",
+                        "type": "integer",
+                        "title": "The _stage Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0,
+                        "examples": [
+                            0
+                        ]
+                    },
+                    "_status": {
+                        "$id": "#/properties/Steps/items/properties/_status",
+                        "type": "string",
+                        "title": "The _status Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Draft"
+                        ]
+                    }
+                }
+            }
+        },
+        "_id": {
+            "$id": "#/properties/_id",
+            "type": "string",
+            "title": "The _id Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "PkQhpNKil49b"
+            ]
+        },
+        "_last_completed_step": {
+            "$id": "#/properties/_last_completed_step",
+            "title": "The _last_completed_step Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "_progress": {
+            "$id": "#/properties/_progress",
+            "type": "number",
+            "title": "The _progress Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                0
+            ]
+        },
+        "_stage": {
+            "$id": "#/properties/_stage",
+            "type": "integer",
+            "title": "The _stage Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                0
+            ]
+        },
+        "_status": {
+            "$id": "#/properties/_status",
+            "type": "string",
+            "title": "The _status Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Draft"
+            ]
+        }
+    }
+}

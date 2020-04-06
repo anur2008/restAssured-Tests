@@ -1,0 +1,265 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The Root Schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "required": [
+        "GroupCount",
+        "GroupMembers",
+        "Name",
+        "SyncFrom",
+        "UserCount",
+        "_id"
+    ],
+    "properties": {
+        "GroupCount": {
+            "$id": "#/properties/GroupCount",
+            "title": "The Groupcount Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "GroupMembers": {
+            "$id": "#/properties/GroupMembers",
+            "type": "array",
+            "title": "The Groupmembers Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "items": {
+                "$id": "#/properties/GroupMembers/items",
+                "type": "object",
+                "title": "The Items Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                    {
+                        "Name": "KF QA",
+                        "FirstName": "KF",
+                        "Groups": [
+                            {
+                                "_id": "UsoeANVSzy2F"
+                            },
+                            {
+                                "_id": "everyone"
+                            },
+                            {
+                                "_id": "GrzL9I8u1fVn"
+                            },
+                            {
+                                "_id": "GrzB93pa3UNp"
+                            },
+                            {
+                                "_id": "GrZACRR8itil"
+                            },
+                            {
+                                "_id": "GrrtCRZ0G1zu"
+                            },
+                            {
+                                "_id": "GrYsWGwNdTFJ"
+                            },
+                            {
+                                "_id": "GrehehriayaH"
+                            }
+                        ],
+                        "_id": "UsoeANVSzy2F",
+                        "Kind": "User",
+                        "LastName": "QA",
+                        "Email": "kfqatest@gmail.com",
+                        "UserType": "Super Admin",
+                        "UserSystemType": 3.0
+                    }
+                ],
+                "required": [
+                    "Email",
+                    "FirstName",
+                    "Groups",
+                    "Kind",
+                    "LastName",
+                    "Name",
+                    "UserSystemType",
+                    "UserType",
+                    "_id"
+                ],
+                "properties": {
+                    "Email": {
+                        "$id": "#/properties/GroupMembers/items/properties/Email",
+                        "type": "string",
+                        "title": "The Email Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "kfqatest@gmail.com"
+                        ]
+                    },
+                    "FirstName": {
+                        "$id": "#/properties/GroupMembers/items/properties/FirstName",
+                        "type": "string",
+                        "title": "The Firstname Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "KF"
+                        ]
+                    },
+                    "Groups": {
+                        "$id": "#/properties/GroupMembers/items/properties/Groups",
+                        "type": "array",
+                        "title": "The Groups Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": [],
+                        "items": {
+                            "$id": "#/properties/GroupMembers/items/properties/Groups/items",
+                            "type": "object",
+                            "title": "The Items Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "_id": "UsoeANVSzy2F"
+                                },
+                                {
+                                    "_id": "everyone"
+                                },
+                                {
+                                    "_id": "GrzL9I8u1fVn"
+                                },
+                                {
+                                    "_id": "GrzB93pa3UNp"
+                                },
+                                {
+                                    "_id": "GrZACRR8itil"
+                                },
+                                {
+                                    "_id": "GrrtCRZ0G1zu"
+                                },
+                                {
+                                    "_id": "GrYsWGwNdTFJ"
+                                },
+                                {
+                                    "_id": "GrehehriayaH"
+                                }
+                            ],
+                            "required": [
+                                "_id"
+                            ],
+                            "properties": {
+                                "_id": {
+                                    "$id": "#/properties/GroupMembers/items/properties/Groups/items/properties/_id",
+                                    "type": "string",
+                                    "title": "The _id Schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "UsoeANVSzy2F"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "Kind": {
+                        "$id": "#/properties/GroupMembers/items/properties/Kind",
+                        "type": "string",
+                        "title": "The Kind Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "User"
+                        ]
+                    },
+                    "LastName": {
+                        "$id": "#/properties/GroupMembers/items/properties/LastName",
+                        "type": "string",
+                        "title": "The Lastname Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "QA"
+                        ]
+                    },
+                    "Name": {
+                        "$id": "#/properties/GroupMembers/items/properties/Name",
+                        "type": "string",
+                        "title": "The Name Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "KF QA"
+                        ]
+                    },
+                    "UserSystemType": {
+                        "$id": "#/properties/GroupMembers/items/properties/UserSystemType",
+                        "type": "integer",
+                        "title": "The Usersystemtype Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0,
+                        "examples": [
+                            3
+                        ]
+                    },
+                    "UserType": {
+                        "$id": "#/properties/GroupMembers/items/properties/UserType",
+                        "type": "string",
+                        "title": "The Usertype Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Super Admin"
+                        ]
+                    },
+                    "_id": {
+                        "$id": "#/properties/GroupMembers/items/properties/_id",
+                        "type": "string",
+                        "title": "The _id Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "UsoeANVSzy2F"
+                        ]
+                    }
+                }
+            }
+        },
+        "Name": {
+            "$id": "#/properties/Name",
+            "type": "string",
+            "title": "The Name Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Test"
+            ]
+        },
+        "SyncFrom": {
+            "$id": "#/properties/SyncFrom",
+            "title": "The Syncfrom Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "UserCount": {
+            "$id": "#/properties/UserCount",
+            "type": "integer",
+            "title": "The Usercount Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        },
+        "_id": {
+            "$id": "#/properties/_id",
+            "type": "string",
+            "title": "The _id Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "GrehehriayaH"
+            ]
+        }
+    }
+}

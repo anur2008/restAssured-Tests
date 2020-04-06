@@ -1,0 +1,992 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "array",
+    "title": "The Root Schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "items": {
+        "$id": "#/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "description": "An explanation about the purpose of this instance.",
+        "default": {},
+        "examples": [
+            {
+                "Status": "Live",
+                "_modified_by": {
+                    "_id": "UsJvAN7lSBKC"
+                },
+                "Description": "The channel for all users in your account",
+                "Name": "Everyone",
+                "_id": "everyone",
+                "_modified_at": "2020-02-18T09:09:11Z",
+                "_created_by": {
+                    "Name": "Anuradha Raman",
+                    "_id": "UsJvAN7lSBKC"
+                },
+                "Type": "Channel",
+                "SharedWith": [
+                    {
+                        "_modified_at": "2020-02-18T09:09:11Z",
+                        "_id": "UsJvAN7lSBKC",
+                        "_created_by": {
+                            "Name": "Anuradha Raman",
+                            "_id": "UsJvAN7lSBKC",
+                            "Kind": "User"
+                        },
+                        "Kind": "User",
+                        "_created_at": "2020-02-18T09:09:11Z",
+                        "_modified_by": {
+                            "Kind": "User",
+                            "Name": "Anuradha Raman",
+                            "_id": "UsJvAN7lSBKC"
+                        },
+                        "Permission": [
+                            "Admin",
+                            "Moderator",
+                            "Member"
+                        ],
+                        "Name": "Anuradha Raman"
+                    },
+                    {
+                        "Kind": "Group",
+                        "FlowId": "everyone",
+                        "_created_at": "2020-02-18T09:09:11Z",
+                        "_modified_by": {
+                            "_id": "UsJvAN7lSBKC",
+                            "Kind": "User",
+                            "Name": "Anuradha Raman"
+                        },
+                        "Permission": [
+                            "Member"
+                        ],
+                        "Name": "everyone",
+                        "FlowType": "Channel",
+                        "_id": "everyone",
+                        "_modified_at": "2020-02-18T09:09:11Z",
+                        "_created_by": {
+                            "Kind": "User",
+                            "Name": "Anuradha Raman",
+                            "_id": "UsJvAN7lSBKC"
+                        }
+                    }
+                ],
+                "Channel": {
+                    "Visibility": "System"
+                },
+                "_created_at": "2020-02-18T09:09:11Z"
+            },
+            {
+                "_created_at": "2020-02-18T09:51:13Z",
+                "Status": "Live",
+                "Description": "",
+                "Name": "Agaram",
+                "_id": "Agaram",
+                "_created_by": {
+                    "Name": "Anuradha Raman",
+                    "_id": "UsJvAN7lSBKC"
+                },
+                "Categories": [],
+                "Type": "List",
+                "SharedWith": [
+                    {
+                        "Kind": "User",
+                        "Name": "Anuradha Raman",
+                        "Permission": [
+                            "Edit",
+                            "Share",
+                            "Admin"
+                        ],
+                        "_id": "UsJvAN7lSBKC"
+                    }
+                ]
+            },
+            {
+                "_created_at": "2020-02-24T04:41:21Z",
+                "Description": "",
+                "_modified_at": "2020-02-24T04:44:08Z",
+                "_created_by": {
+                    "Name": "KF QA",
+                    "_id": "UsoeANVSzy2F"
+                },
+                "Type": "Process",
+                "Categories": [],
+                "SharedWith": [
+                    {
+                        "_id": "UsoeANVSzy2F",
+                        "Kind": "User",
+                        "Name": "KF QA",
+                        "Permission": [
+                            "Edit",
+                            "Share",
+                            "Admin"
+                        ]
+                    }
+                ],
+                "Channel": {
+                    "Visibility": "System"
+                },
+                "Status": "Live",
+                "_modified_by": {
+                    "_id": "UsoeANVSzy2F"
+                },
+                "Name": "EndtoEnd",
+                "LastPublishedAt": "2020-02-24T04:44:08Z",
+                "_id": "EndtoEnd_01"
+            },
+            {
+                "Status": "Live",
+                "_modified_by": {
+                    "_id": "UsoeANVSzy2F"
+                },
+                "LastPublishedAt": "2020-03-04T09:24:57Z",
+                "Name": "case1",
+                "_id": "case1",
+                "_created_at": "2020-03-04T09:24:25Z",
+                "Description": "",
+                "_modified_at": "2020-03-04T09:24:57Z",
+                "_created_by": {
+                    "_id": "UsoeANVSzy2F",
+                    "Name": "KF QA"
+                },
+                "Categories": [],
+                "Type": "Case",
+                "SharedWith": [
+                    {
+                        "Name": "KF QA",
+                        "Permission": [
+                            "Edit",
+                            "Share",
+                            "Admin"
+                        ],
+                        "_id": "UsoeANVSzy2F",
+                        "Kind": "User"
+                    }
+                ],
+                "Channel": {
+                    "Visibility": "System"
+                }
+            },
+            {
+                "_modified_at": "2020-03-13T08:09:57Z",
+                "_created_by": {
+                    "_id": "UsoeANVSzy2F",
+                    "Name": "KF QA"
+                },
+                "Categories": [],
+                "Type": "Process",
+                "SharedWith": [
+                    {
+                        "Kind": "User",
+                        "Name": "KF QA",
+                        "Permission": [
+                            "Admin",
+                            "Initiate",
+                            "Edit",
+                            "CreateReport",
+                            "Member"
+                        ],
+                        "_id": "UsoeANVSzy2F"
+                    },
+                    {
+                        "_id": "UsJvAN7lSBKC",
+                        "Kind": "User",
+                        "Name": "Anuradha Raman",
+                        "Permission": [
+                            "Admin",
+                            "Initiate",
+                            "Edit",
+                            "CreateReport",
+                            "Member"
+                        ]
+                    },
+                    {
+                        "_id": "everyone",
+                        "Kind": "Group",
+                        "Name": "Everyone",
+                        "Permission": [
+                            "Initiate",
+                            "Edit",
+                            "Member"
+                        ]
+                    }
+                ],
+                "Channel": {
+                    "Visibility": "System"
+                },
+                "Status": "Live",
+                "_modified_by": {
+                    "_id": "UsJvAN7lSBKC"
+                },
+                "Name": "SmokeProcess",
+                "LastPublishedAt": "2020-03-10T08:26:30Z",
+                "_id": "SmokeProcess_149",
+                "_created_at": "2020-03-10T08:25:15Z",
+                "Description": ""
+            },
+            {
+                "_created_at": "2020-03-12T06:56:49Z",
+                "Description": "",
+                "_modified_at": "2020-03-12T06:56:49Z",
+                "_created_by": {
+                    "Name": "Anuradha Raman",
+                    "_id": "UsJvAN7lSBKC"
+                },
+                "Type": "Channel",
+                "Categories": [],
+                "SharedWith": [
+                    {
+                        "_modified_at": "2020-03-12T06:56:49Z",
+                        "_id": "UsJvAN7lSBKC",
+                        "_created_by": {
+                            "Name": "Anuradha Raman",
+                            "_id": "UsJvAN7lSBKC",
+                            "Kind": "User"
+                        },
+                        "Kind": "User",
+                        "_created_at": "2020-03-12T06:56:49Z",
+                        "_modified_by": {
+                            "_id": "UsJvAN7lSBKC",
+                            "Kind": "User",
+                            "Name": "Anuradha Raman"
+                        },
+                        "Name": "Anuradha Raman",
+                        "Permission": [
+                            "Admin",
+                            "Moderator",
+                            "Member"
+                        ]
+                    },
+                    {
+                        "_created_at": "2020-03-12T07:10:56Z",
+                        "_modified_by": {
+                            "Name": "Anuradha Raman",
+                            "_id": "UsJvAN7lSBKC",
+                            "Kind": "User"
+                        },
+                        "Name": "everyone",
+                        "Permission": [
+                            "Member"
+                        ],
+                        "_id": "everyone",
+                        "_modified_at": "2020-03-12T07:10:56Z",
+                        "_created_by": {
+                            "Kind": "User",
+                            "Name": "Anuradha Raman",
+                            "_id": "UsJvAN7lSBKC"
+                        },
+                        "Kind": "Group"
+                    },
+                    {
+                        "Permission": [
+                            "Member"
+                        ],
+                        "Name": "KF QA",
+                        "_modified_at": "2020-03-12T07:10:56Z",
+                        "_id": "UsoeANVSzy2F",
+                        "_created_by": {
+                            "Kind": "User",
+                            "Name": "Anuradha Raman",
+                            "_id": "UsJvAN7lSBKC"
+                        },
+                        "Kind": "User",
+                        "_created_at": "2020-03-12T07:10:56Z",
+                        "_modified_by": {
+                            "Name": "Anuradha Raman",
+                            "_id": "UsJvAN7lSBKC",
+                            "Kind": "User"
+                        }
+                    },
+                    {
+                        "_id": "UszVYqHGQGRs",
+                        "_modified_at": "2020-03-12T07:10:56Z",
+                        "_created_by": {
+                            "Name": "Anuradha Raman",
+                            "_id": "UsJvAN7lSBKC",
+                            "Kind": "User"
+                        },
+                        "Kind": "User",
+                        "_created_at": "2020-03-12T07:10:56Z",
+                        "_modified_by": {
+                            "Kind": "User",
+                            "Name": "Anuradha Raman",
+                            "_id": "UsJvAN7lSBKC"
+                        },
+                        "Name": "QAOutlook User",
+                        "Permission": [
+                            "Member"
+                        ]
+                    },
+                    {
+                        "_modified_at": "2020-03-12T07:10:56Z",
+                        "_id": "UsxpYqHRxe19",
+                        "_created_by": {
+                            "_id": "UsJvAN7lSBKC",
+                            "Kind": "User",
+                            "Name": "Anuradha Raman"
+                        },
+                        "Kind": "User",
+                        "_created_at": "2020-03-12T07:10:56Z",
+                        "_modified_by": {
+                            "Name": "Anuradha Raman",
+                            "_id": "UsJvAN7lSBKC",
+                            "Kind": "User"
+                        },
+                        "Permission": [
+                            "Member"
+                        ],
+                        "Name": "QAYahoo UserAdmin"
+                    }
+                ],
+                "Channel": {
+                    "Visibility": "Open"
+                },
+                "Status": "Live",
+                "_modified_by": {
+                    "_id": "UsJvAN7lSBKC"
+                },
+                "Name": "Anu-Channel",
+                "_id": "Anu_Channel"
+            },
+            {
+                "_modified_at": "2020-03-13T13:44:36Z",
+                "_created_by": {
+                    "_id": "UsJvAN7lSBKC",
+                    "Kind": "User",
+                    "Name": "Anuradha Raman"
+                },
+                "Categories": [],
+                "Type": "Process",
+                "SharedWith": [
+                    {
+                        "_id": "UsoeANVSzy2F",
+                        "Kind": "User",
+                        "Name": "KF QA",
+                        "Permission": [
+                            "Admin",
+                            "Initiate",
+                            "Edit",
+                            "CreateReport",
+                            "Member"
+                        ]
+                    },
+                    {
+                        "Name": "Anuradha Raman",
+                        "Permission": [
+                            "Admin",
+                            "Initiate",
+                            "Edit",
+                            "CreateReport",
+                            "Member"
+                        ],
+                        "_id": "UsJvAN7lSBKC",
+                        "Kind": "User"
+                    },
+                    {
+                        "Name": "Everyone",
+                        "Permission": [
+                            "Initiate",
+                            "Edit",
+                            "Member"
+                        ],
+                        "_id": "everyone",
+                        "Kind": "Group"
+                    }
+                ],
+                "Channel": {
+                    "Visibility": "System"
+                },
+                "Status": "Live",
+                "_modified_by": {
+                    "_id": "UsJvAN7lSBKC"
+                },
+                "LastPublishedAt": "2020-03-13T13:44:36Z",
+                "Name": "Copy of SmokeProcess",
+                "_id": "Copy_of_SmokeProcess",
+                "_created_at": "2020-03-13T08:10:08Z",
+                "Description": ""
+            },
+            {
+                "_modified_at": "2020-03-23T13:36:36Z",
+                "_created_by": {
+                    "Name": "Anuradha Raman",
+                    "_id": "UsJvAN7lSBKC"
+                },
+                "Categories": [],
+                "Type": "Dataset",
+                "SharedWith": [
+                    {
+                        "Name": "Anuradha Raman",
+                        "Permission": [
+                            "Edit",
+                            "Share",
+                            "Admin"
+                        ],
+                        "_id": "UsJvAN7lSBKC",
+                        "Kind": "User"
+                    }
+                ],
+                "Status": "Live",
+                "_modified_by": {
+                    "_id": "UsJvAN7lSBKC"
+                },
+                "Name": "DS-001",
+                "LastPublishedAt": "2020-03-23T13:36:36Z",
+                "_id": "DS_001",
+                "_created_at": "2020-03-23T13:36:36Z",
+                "Description": ""
+            },
+            {
+                "_modified_by": {
+                    "_id": "UsJvAN7lSBKC"
+                },
+                "LastPublishedAt": "2020-03-23T17:51:04Z",
+                "Name": "test",
+                "_id": "test",
+                "_created_at": "2020-03-23T17:51:04Z",
+                "Description": "",
+                "_modified_at": "2020-03-23T17:51:04Z",
+                "_created_by": {
+                    "_id": "UsJvAN7lSBKC",
+                    "Name": "Anuradha Raman"
+                },
+                "Type": "Dataset",
+                "Categories": [],
+                "SharedWith": [
+                    {
+                        "Kind": "User",
+                        "Name": "Anuradha Raman",
+                        "Permission": [
+                            "Edit",
+                            "Share",
+                            "Admin"
+                        ],
+                        "_id": "UsJvAN7lSBKC"
+                    }
+                ],
+                "Status": "Live"
+            },
+            {
+                "Status": "Live",
+                "_modified_by": {
+                    "_id": "UsoeANVSzy2F"
+                },
+                "Name": "test123",
+                "LastPublishedAt": "2020-03-25T09:25:46Z",
+                "_id": "test123",
+                "_created_at": "2020-03-23T18:00:58Z",
+                "Description": "",
+                "_modified_at": "2020-03-26T18:45:57Z",
+                "_created_by": {
+                    "Name": "KF QA",
+                    "_id": "UsoeANVSzy2F"
+                },
+                "Type": "Dataset",
+                "Categories": [],
+                "SharedWith": [
+                    {
+                        "_id": "UsoeANVSzy2F",
+                        "Kind": "User",
+                        "Name": "KF QA",
+                        "Permission": [
+                            "Edit",
+                            "Share",
+                            "Admin"
+                        ]
+                    },
+                    {
+                        "Name": "Anuradha Raman",
+                        "Permission": [
+                            "Share",
+                            "Edit",
+                            "Admin"
+                        ],
+                        "_id": "UsJvAN7lSBKC",
+                        "Kind": "User"
+                    }
+                ]
+            },
+            {
+                "LastPublishedAt": "2020-03-26T17:46:31Z",
+                "Name": "Anu-DS-2020",
+                "_id": "Anu_DS_2021",
+                "_created_at": "2020-03-26T07:30:49Z",
+                "Description": "",
+                "_modified_at": "2020-03-26T17:46:31Z",
+                "_created_by": {
+                    "_id": "UsoeANVSzy2F",
+                    "Name": "KF QA"
+                },
+                "Categories": [],
+                "Type": "Dataset",
+                "SharedWith": [
+                    {
+                        "Name": "KF QA",
+                        "Permission": [
+                            "Edit",
+                            "Share",
+                            "Admin"
+                        ],
+                        "_id": "UsoeANVSzy2F",
+                        "Kind": "User"
+                    }
+                ],
+                "Status": "Live",
+                "_modified_by": {
+                    "_id": "UsoeANVSzy2F"
+                }
+            },
+            {
+                "_created_at": "2020-03-28T14:34:12Z",
+                "Description": "",
+                "_modified_at": "2020-03-28T14:34:29Z",
+                "_created_by": {
+                    "Name": "KF QA",
+                    "_id": "UsoeANVSzy2F"
+                },
+                "Categories": [],
+                "Type": "Dataset",
+                "SharedWith": [
+                    {
+                        "_id": "UsoeANVSzy2F",
+                        "Kind": "User",
+                        "Name": "KF QA",
+                        "Permission": [
+                            "Edit",
+                            "Share",
+                            "Admin"
+                        ]
+                    }
+                ],
+                "Status": "Live",
+                "_modified_by": {
+                    "_id": "UsoeANVSzy2F"
+                },
+                "Name": "SmokeDataset",
+                "LastPublishedAt": "2020-03-28T14:34:29Z",
+                "_id": "SmokeDataset_33"
+            }
+        ],
+        "required": [
+            "Channel",
+            "Description",
+            "Name",
+            "SharedWith",
+            "Status",
+            "Type",
+            "_created_at",
+            "_created_by",
+            "_id",
+            "_modified_at",
+            "_modified_by"
+        ],
+        "properties": {
+            "Channel": {
+                "$id": "#/items/properties/Channel",
+                "type": "object",
+                "title": "The Channel Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                    {
+                        "Visibility": "System"
+                    }
+                ],
+                "required": [
+                    "Visibility"
+                ],
+                "properties": {
+                    "Visibility": {
+                        "$id": "#/items/properties/Channel/properties/Visibility",
+                        "type": "string",
+                        "title": "The Visibility Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "System"
+                        ]
+                    }
+                }
+            },
+            "Description": {
+                "$id": "#/items/properties/Description",
+                "type": "string",
+                "title": "The Description Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    "The channel for all users in your account"
+                ]
+            },
+            "Name": {
+                "$id": "#/items/properties/Name",
+                "type": "string",
+                "title": "The Name Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    "Everyone"
+                ]
+            },
+            "SharedWith": {
+                "$id": "#/items/properties/SharedWith",
+                "type": "array",
+                "title": "The Sharedwith Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "items": {
+                    "$id": "#/items/properties/SharedWith/items",
+                    "type": "object",
+                    "title": "The Items Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "_modified_at": "2020-02-18T09:09:11Z",
+                            "_id": "UsJvAN7lSBKC",
+                            "_created_by": {
+                                "Name": "Anuradha Raman",
+                                "_id": "UsJvAN7lSBKC",
+                                "Kind": "User"
+                            },
+                            "Kind": "User",
+                            "_created_at": "2020-02-18T09:09:11Z",
+                            "_modified_by": {
+                                "Name": "Anuradha Raman",
+                                "_id": "UsJvAN7lSBKC",
+                                "Kind": "User"
+                            },
+                            "Permission": [
+                                "Admin",
+                                "Moderator",
+                                "Member"
+                            ],
+                            "Name": "Anuradha Raman"
+                        },
+                        {
+                            "Kind": "Group",
+                            "FlowId": "everyone",
+                            "_created_at": "2020-02-18T09:09:11Z",
+                            "_modified_by": {
+                                "Name": "Anuradha Raman",
+                                "_id": "UsJvAN7lSBKC",
+                                "Kind": "User"
+                            },
+                            "Permission": [
+                                "Member"
+                            ],
+                            "Name": "everyone",
+                            "FlowType": "Channel",
+                            "_modified_at": "2020-02-18T09:09:11Z",
+                            "_id": "everyone",
+                            "_created_by": {
+                                "Name": "Anuradha Raman",
+                                "_id": "UsJvAN7lSBKC",
+                                "Kind": "User"
+                            }
+                        }
+                    ],
+                    "required": [
+                        "Kind",
+                        "Name",
+                        "Permission",
+                        "_created_at",
+                        "_created_by",
+                        "_id",
+                        "_modified_at",
+                        "_modified_by"
+                    ],
+                    "properties": {
+                        "Kind": {
+                            "$id": "#/items/properties/SharedWith/items/properties/Kind",
+                            "type": "string",
+                            "title": "The Kind Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "User"
+                            ]
+                        },
+                        "Name": {
+                            "$id": "#/items/properties/SharedWith/items/properties/Name",
+                            "type": "string",
+                            "title": "The Name Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Anuradha Raman"
+                            ]
+                        },
+                        "Permission": {
+                            "$id": "#/items/properties/SharedWith/items/properties/Permission",
+                            "type": "array",
+                            "title": "The Permission Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": [],
+                            "items": {
+                                "$id": "#/items/properties/SharedWith/items/properties/Permission/items",
+                                "type": "string",
+                                "title": "The Items Schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "Admin",
+                                    "Moderator",
+                                    "Member"
+                                ]
+                            }
+                        },
+                        "_created_at": {
+                            "$id": "#/items/properties/SharedWith/items/properties/_created_at",
+                            "type": "string",
+                            "title": "The _created_at Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "2020-02-18T09:09:11Z"
+                            ]
+                        },
+                        "_created_by": {
+                            "$id": "#/items/properties/SharedWith/items/properties/_created_by",
+                            "type": "object",
+                            "title": "The _created_by Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "_id": "UsJvAN7lSBKC",
+                                    "Kind": "User",
+                                    "Name": "Anuradha Raman"
+                                }
+                            ],
+                            "required": [
+                                "Kind",
+                                "Name",
+                                "_id"
+                            ],
+                            "properties": {
+                                "Kind": {
+                                    "$id": "#/items/properties/SharedWith/items/properties/_created_by/properties/Kind",
+                                    "type": "string",
+                                    "title": "The Kind Schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "User"
+                                    ]
+                                },
+                                "Name": {
+                                    "$id": "#/items/properties/SharedWith/items/properties/_created_by/properties/Name",
+                                    "type": "string",
+                                    "title": "The Name Schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "Anuradha Raman"
+                                    ]
+                                },
+                                "_id": {
+                                    "$id": "#/items/properties/SharedWith/items/properties/_created_by/properties/_id",
+                                    "type": "string",
+                                    "title": "The _id Schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "UsJvAN7lSBKC"
+                                    ]
+                                }
+                            }
+                        },
+                        "_id": {
+                            "$id": "#/items/properties/SharedWith/items/properties/_id",
+                            "type": "string",
+                            "title": "The _id Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "UsJvAN7lSBKC"
+                            ]
+                        },
+                        "_modified_at": {
+                            "$id": "#/items/properties/SharedWith/items/properties/_modified_at",
+                            "type": "string",
+                            "title": "The _modified_at Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "2020-02-18T09:09:11Z"
+                            ]
+                        },
+                        "_modified_by": {
+                            "$id": "#/items/properties/SharedWith/items/properties/_modified_by",
+                            "type": "object",
+                            "title": "The _modified_by Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "_id": "UsJvAN7lSBKC",
+                                    "Kind": "User",
+                                    "Name": "Anuradha Raman"
+                                }
+                            ],
+                            "required": [
+                                "Kind",
+                                "Name",
+                                "_id"
+                            ],
+                            "properties": {
+                                "Kind": {
+                                    "$id": "#/items/properties/SharedWith/items/properties/_modified_by/properties/Kind",
+                                    "type": "string",
+                                    "title": "The Kind Schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "User"
+                                    ]
+                                },
+                                "Name": {
+                                    "$id": "#/items/properties/SharedWith/items/properties/_modified_by/properties/Name",
+                                    "type": "string",
+                                    "title": "The Name Schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "Anuradha Raman"
+                                    ]
+                                },
+                                "_id": {
+                                    "$id": "#/items/properties/SharedWith/items/properties/_modified_by/properties/_id",
+                                    "type": "string",
+                                    "title": "The _id Schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "UsJvAN7lSBKC"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "Status": {
+                "$id": "#/items/properties/Status",
+                "type": "string",
+                "title": "The Status Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    "Live"
+                ]
+            },
+            "Type": {
+                "$id": "#/items/properties/Type",
+                "type": "string",
+                "title": "The Type Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    "Channel"
+                ]
+            },
+            "_created_at": {
+                "$id": "#/items/properties/_created_at",
+                "type": "string",
+                "title": "The _created_at Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    "2020-02-18T09:09:11Z"
+                ]
+            },
+            "_created_by": {
+                "$id": "#/items/properties/_created_by",
+                "type": "object",
+                "title": "The _created_by Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                    {
+                        "Name": "Anuradha Raman",
+                        "_id": "UsJvAN7lSBKC"
+                    }
+                ],
+                "required": [
+                    "Name",
+                    "_id"
+                ],
+                "properties": {
+                    "Name": {
+                        "$id": "#/items/properties/_created_by/properties/Name",
+                        "type": "string",
+                        "title": "The Name Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Anuradha Raman"
+                        ]
+                    },
+                    "_id": {
+                        "$id": "#/items/properties/_created_by/properties/_id",
+                        "type": "string",
+                        "title": "The _id Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "UsJvAN7lSBKC"
+                        ]
+                    }
+                }
+            },
+            "_id": {
+                "$id": "#/items/properties/_id",
+                "type": "string",
+                "title": "The _id Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    "everyone"
+                ]
+            },
+            "_modified_at": {
+                "$id": "#/items/properties/_modified_at",
+                "type": "string",
+                "title": "The _modified_at Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    "2020-02-18T09:09:11Z"
+                ]
+            },
+            "_modified_by": {
+                "$id": "#/items/properties/_modified_by",
+                "type": "object",
+                "title": "The _modified_by Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                    {
+                        "_id": "UsJvAN7lSBKC"
+                    }
+                ],
+                "required": [
+                    "_id"
+                ],
+                "properties": {
+                    "_id": {
+                        "$id": "#/items/properties/_modified_by/properties/_id",
+                        "type": "string",
+                        "title": "The _id Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "UsJvAN7lSBKC"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

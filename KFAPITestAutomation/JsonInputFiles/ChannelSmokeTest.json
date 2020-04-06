@@ -1,0 +1,22 @@
+{
+	"Admin": "QAGmail",
+	"flowType": "Channel",
+	"flowName": "SmokeChannel",
+	"Member2": "QAOutlook User",
+	"PostMessage" :"தமிழை கனவிலும் மறவேன் அன்றோ?",	
+	"Announcement" :"Tomorrow is Holiday be happy:)",	
+	"Poll": {
+		"PollTitle": "Choose Your favourite language",
+		"PollOption1": "Tamil",
+		"PollOption2": "English",
+		"PollOption3": "Malayalam"
+		
+		
+	},
+"Comment":
+{"Content":[{"type":"paragraph",
+	"data":{},
+	"nodes":[{"type":"text","text":"Testing Anu"}]}],
+	"AtMention":{}}
+}
+  

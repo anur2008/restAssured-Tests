@@ -1,0 +1,122 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "array",
+    "title": "The Root Schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "items": {
+        "$id": "#/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "description": "An explanation about the purpose of this instance.",
+        "default": {},
+        "examples": [
+            {
+                "Name": "Everyone",
+                "UserCount": 5.0,
+                "_id": "everyone",
+                "SyncFrom": null,
+                "GroupCount": null
+            },
+            {
+                "Name": "Test",
+                "UserCount": 2.0,
+                "_id": "GrzL9I8u1fVn",
+                "SyncFrom": null,
+                "GroupCount": null
+            },
+            {
+                "GroupCount": null,
+                "Name": "Test",
+                "UserCount": 1.0,
+                "_id": "GrzB93pa3UNp",
+                "SyncFrom": null
+            },
+            {
+                "SyncFrom": null,
+                "GroupCount": null,
+                "Name": "Test",
+                "UserCount": 1.0,
+                "_id": "GrZACRR8itil"
+            },
+            {
+                "UserCount": 1.0,
+                "_id": "GrrtCRZ0G1zu",
+                "SyncFrom": null,
+                "GroupCount": null,
+                "Name": "Test"
+            },
+            {
+                "Name": "Test",
+                "UserCount": 1.0,
+                "_id": "GrYsWGwNdTFJ",
+                "SyncFrom": null,
+                "GroupCount": null
+            },
+            {
+                "UserCount": 1.0,
+                "_id": "GrehehriayaH",
+                "SyncFrom": null,
+                "GroupCount": null,
+                "Name": "Test"
+            }
+        ],
+        "required": [
+            "GroupCount",
+            "Name",
+            "SyncFrom",
+            "UserCount",
+            "_id"
+        ],
+        "properties": {
+            "GroupCount": {
+                "$id": "#/items/properties/GroupCount",
+                "title": "The Groupcount Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": null,
+                "examples": [
+                    null
+                ]
+            },
+            "Name": {
+                "$id": "#/items/properties/Name",
+                "type": "string",
+                "title": "The Name Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    "Everyone"
+                ]
+            },
+            "SyncFrom": {
+                "$id": "#/items/properties/SyncFrom",
+                "title": "The Syncfrom Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": null,
+                "examples": [
+                    null
+                ]
+            },
+            "UserCount": {
+                "$id": "#/items/properties/UserCount",
+                "type": "integer",
+                "title": "The Usercount Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                    5
+                ]
+            },
+            "_id": {
+                "$id": "#/items/properties/_id",
+                "type": "string",
+                "title": "The _id Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                    "everyone"
+                ]
+            }
+        }
+    }
+}

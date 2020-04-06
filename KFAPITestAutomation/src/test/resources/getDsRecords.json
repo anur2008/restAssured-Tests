@@ -1,0 +1,626 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The Root Schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "required": [
+        "Aggregation",
+        "Columns",
+        "Data",
+        "Filter",
+        "Id",
+        "Sort"
+    ],
+    "properties": {
+        "Aggregation": {
+            "$id": "#/properties/Aggregation",
+            "type": "object",
+            "title": "The Aggregation Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "Name": {
+                        "Count": 10.0,
+                        "Blank": 1.0,
+                        "NonBlank": 9.0
+                    },
+                    "ThisIsImage": {
+                        "Blank": 10.0,
+                        "NonBlank": 0.0,
+                        "Count": 10.0
+                    },
+                    "ThisIsNum": {
+                        "Count": 10.0,
+                        "Min": null,
+                        "Sum": 0.0,
+                        "Max": null,
+                        "Average": null,
+                        "Blank": 10.0,
+                        "NonBlank": 0.0
+                    },
+                    "ThisIsAttach": {
+                        "Count": 10.0,
+                        "Blank": 10.0,
+                        "NonBlank": 0.0
+                    },
+                    "ThisIsText": {
+                        "Count": 10.0,
+                        "Blank": 0.0,
+                        "NonBlank": 10.0
+                    }
+                }
+            ],
+            "required": [
+                "Name",
+                "ThisIsAttach",
+                "ThisIsImage",
+                "ThisIsNum",
+                "ThisIsText"
+            ],
+            "properties": {
+                "Name": {
+                    "$id": "#/properties/Aggregation/properties/Name",
+                    "type": "object",
+                    "title": "The Name Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "Blank": 1.0,
+                            "NonBlank": 9.0,
+                            "Count": 10.0
+                        }
+                    ],
+                    "required": [
+                        "Blank",
+                        "Count",
+                        "NonBlank"
+                    ],
+                    "properties": {
+                        "Blank": {
+                            "$id": "#/properties/Aggregation/properties/Name/properties/Blank",
+                            "type": "integer",
+                            "title": "The Blank Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                1
+                            ]
+                        },
+                        "Count": {
+                            "$id": "#/properties/Aggregation/properties/Name/properties/Count",
+                            "type": "integer",
+                            "title": "The Count Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                10
+                            ]
+                        },
+                        "NonBlank": {
+                            "$id": "#/properties/Aggregation/properties/Name/properties/NonBlank",
+                            "type": "integer",
+                            "title": "The Nonblank Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                9
+                            ]
+                        }
+                    }
+                },
+                "ThisIsAttach": {
+                    "$id": "#/properties/Aggregation/properties/ThisIsAttach",
+                    "type": "object",
+                    "title": "The Thisisattach Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "NonBlank": 0.0,
+                            "Count": 10.0,
+                            "Blank": 10.0
+                        }
+                    ],
+                    "required": [
+                        "Blank",
+                        "Count",
+                        "NonBlank"
+                    ],
+                    "properties": {
+                        "Blank": {
+                            "$id": "#/properties/Aggregation/properties/ThisIsAttach/properties/Blank",
+                            "type": "integer",
+                            "title": "The Blank Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                10
+                            ]
+                        },
+                        "Count": {
+                            "$id": "#/properties/Aggregation/properties/ThisIsAttach/properties/Count",
+                            "type": "integer",
+                            "title": "The Count Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                10
+                            ]
+                        },
+                        "NonBlank": {
+                            "$id": "#/properties/Aggregation/properties/ThisIsAttach/properties/NonBlank",
+                            "type": "integer",
+                            "title": "The Nonblank Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        }
+                    }
+                },
+                "ThisIsImage": {
+                    "$id": "#/properties/Aggregation/properties/ThisIsImage",
+                    "type": "object",
+                    "title": "The Thisisimage Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "NonBlank": 0.0,
+                            "Count": 10.0,
+                            "Blank": 10.0
+                        }
+                    ],
+                    "required": [
+                        "Blank",
+                        "Count",
+                        "NonBlank"
+                    ],
+                    "properties": {
+                        "Blank": {
+                            "$id": "#/properties/Aggregation/properties/ThisIsImage/properties/Blank",
+                            "type": "integer",
+                            "title": "The Blank Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                10
+                            ]
+                        },
+                        "Count": {
+                            "$id": "#/properties/Aggregation/properties/ThisIsImage/properties/Count",
+                            "type": "integer",
+                            "title": "The Count Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                10
+                            ]
+                        },
+                        "NonBlank": {
+                            "$id": "#/properties/Aggregation/properties/ThisIsImage/properties/NonBlank",
+                            "type": "integer",
+                            "title": "The Nonblank Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        }
+                    }
+                },
+                "ThisIsNum": {
+                    "$id": "#/properties/Aggregation/properties/ThisIsNum",
+                    "type": "object",
+                    "title": "The Thisisnum Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "Count": 10.0,
+                            "Min": null,
+                            "Sum": 0.0,
+                            "Max": null,
+                            "Average": null,
+                            "Blank": 10.0,
+                            "NonBlank": 0.0
+                        }
+                    ],
+                    "required": [
+                        "Average",
+                        "Blank",
+                        "Count",
+                        "Max",
+                        "Min",
+                        "NonBlank",
+                        "Sum"
+                    ],
+                    "properties": {
+                        "Average": {
+                            "$id": "#/properties/Aggregation/properties/ThisIsNum/properties/Average",
+                            "title": "The Average Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "Blank": {
+                            "$id": "#/properties/Aggregation/properties/ThisIsNum/properties/Blank",
+                            "type": "integer",
+                            "title": "The Blank Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                10
+                            ]
+                        },
+                        "Count": {
+                            "$id": "#/properties/Aggregation/properties/ThisIsNum/properties/Count",
+                            "type": "integer",
+                            "title": "The Count Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                10
+                            ]
+                        },
+                        "Max": {
+                            "$id": "#/properties/Aggregation/properties/ThisIsNum/properties/Max",
+                            "title": "The Max Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "Min": {
+                            "$id": "#/properties/Aggregation/properties/ThisIsNum/properties/Min",
+                            "title": "The Min Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "NonBlank": {
+                            "$id": "#/properties/Aggregation/properties/ThisIsNum/properties/NonBlank",
+                            "type": "integer",
+                            "title": "The Nonblank Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "Sum": {
+                            "$id": "#/properties/Aggregation/properties/ThisIsNum/properties/Sum",
+                            "type": "integer",
+                            "title": "The Sum Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        }
+                    }
+                },
+                "ThisIsText": {
+                    "$id": "#/properties/Aggregation/properties/ThisIsText",
+                    "type": "object",
+                    "title": "The Thisistext Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "Blank": 0.0,
+                            "NonBlank": 10.0,
+                            "Count": 10.0
+                        }
+                    ],
+                    "required": [
+                        "Blank",
+                        "Count",
+                        "NonBlank"
+                    ],
+                    "properties": {
+                        "Blank": {
+                            "$id": "#/properties/Aggregation/properties/ThisIsText/properties/Blank",
+                            "type": "integer",
+                            "title": "The Blank Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                0
+                            ]
+                        },
+                        "Count": {
+                            "$id": "#/properties/Aggregation/properties/ThisIsText/properties/Count",
+                            "type": "integer",
+                            "title": "The Count Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                10
+                            ]
+                        },
+                        "NonBlank": {
+                            "$id": "#/properties/Aggregation/properties/ThisIsText/properties/NonBlank",
+                            "type": "integer",
+                            "title": "The Nonblank Schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                                10
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "Columns": {
+            "$id": "#/properties/Columns",
+            "type": "array",
+            "title": "The Columns Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "items": {
+                "$id": "#/properties/Columns/items",
+                "type": "object",
+                "title": "The Items Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                    {
+                        "IsSystemField": true,
+                        "Name": "Key",
+                        "ReadOnly": false,
+                        "Model": "SmokeDataset_30",
+                        "Type": "Text",
+                        "Widget": null,
+                        "Id": "Name"
+                    },
+                    {
+                        "Name": "ThisIsText",
+                        "IsSystemField": false,
+                        "ReadOnly": false,
+                        "Model": "SmokeDataset_30",
+                        "Type": "Text",
+                        "Widget": null,
+                        "Id": "ThisIsText"
+                    },
+                    {
+                        "Widget": null,
+                        "Id": "ThisIsNum",
+                        "Decimalpoint": 8.0,
+                        "IsSystemField": false,
+                        "Name": "ThisIsNum",
+                        "ReadOnly": false,
+                        "Model": "SmokeDataset_30",
+                        "Type": "Number"
+                    },
+                    {
+                        "Name": "ThisIsImage",
+                        "IsSystemField": false,
+                        "ReadOnly": false,
+                        "Model": "SmokeDataset_30",
+                        "Type": "Image",
+                        "Widget": null,
+                        "Id": "ThisIsImage"
+                    },
+                    {
+                        "IsSystemField": false,
+                        "Name": "ThisIsAttach",
+                        "ReadOnly": false,
+                        "Model": "SmokeDataset_30",
+                        "Type": "Attachment",
+                        "Widget": null,
+                        "Id": "ThisIsAttach"
+                    }
+                ],
+                "required": [
+                    "Id",
+                    "IsSystemField",
+                    "Model",
+                    "Name",
+                    "ReadOnly",
+                    "Type",
+                    "Widget"
+                ],
+                "properties": {
+                    "Id": {
+                        "$id": "#/properties/Columns/items/properties/Id",
+                        "type": "string",
+                        "title": "The Id Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Name"
+                        ]
+                    },
+                    "IsSystemField": {
+                        "$id": "#/properties/Columns/items/properties/IsSystemField",
+                        "type": "boolean",
+                        "title": "The Issystemfield Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": false,
+                        "examples": [
+                            true
+                        ]
+                    },
+                    "Model": {
+                        "$id": "#/properties/Columns/items/properties/Model",
+                        "type": "string",
+                        "title": "The Model Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "SmokeDataset_30"
+                        ]
+                    },
+                    "Name": {
+                        "$id": "#/properties/Columns/items/properties/Name",
+                        "type": "string",
+                        "title": "The Name Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Key"
+                        ]
+                    },
+                    "ReadOnly": {
+                        "$id": "#/properties/Columns/items/properties/ReadOnly",
+                        "type": "boolean",
+                        "title": "The Readonly Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": false,
+                        "examples": [
+                            false
+                        ]
+                    },
+                    "Type": {
+                        "$id": "#/properties/Columns/items/properties/Type",
+                        "type": "string",
+                        "title": "The Type Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Text"
+                        ]
+                    },
+                    "Widget": {
+                        "$id": "#/properties/Columns/items/properties/Widget",
+                        "title": "The Widget Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": null,
+                        "examples": [
+                            null
+                        ]
+                    }
+                }
+            }
+        },
+        "Data": {
+            "$id": "#/properties/Data",
+            "type": "array",
+            "title": "The Data Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "items": {
+                "$id": "#/properties/Data/items",
+                "type": "object",
+                "title": "The Items Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                    {
+                        "_id": "SmokeDataset_30_ammj5k-_vk",
+                        "ThisIsText": "Master"
+                    },
+                    {
+                        "_id": "PkXFVJ0Rxy_Y",
+                        "ThisIsText": "Ms.",
+                        "Name": "859327"
+                    },
+                    {
+                        "_id": "PkC2VJ0RJhc7",
+                        "ThisIsText": "Ms.",
+                        "Name": "887387"
+                    },
+                    {
+                        "ThisIsText": "Hon.",
+                        "Name": "779497",
+                        "_id": "PkegVJ0RJhLu"
+                    },
+                    {
+                        "Name": "896517",
+                        "_id": "PkmaVJ0RJwD6",
+                        "ThisIsText": "Drs."
+                    },
+                    {
+                        "_id": "PkQPVJ0RJwNP",
+                        "ThisIsText": "Mrs.",
+                        "Name": "220965"
+                    },
+                    {
+                        "Name": "721091",
+                        "_id": "Pkq6VJ0RJk1t",
+                        "ThisIsText": "Prof."
+                    },
+                    {
+                        "Name": "633636",
+                        "_id": "PklKVJ0RJkNr",
+                        "ThisIsText": "Prof."
+                    },
+                    {
+                        "_id": "PktCVJ0RJ66L",
+                        "ThisIsText": "Prof.",
+                        "Name": "823898"
+                    },
+                    {
+                        "Name": "413865",
+                        "_id": "PkdQVJ0RJ6pN",
+                        "ThisIsText": "Mr."
+                    }
+                ],
+                "required": [
+                    "ThisIsText",
+                    "_id"
+                ],
+                "properties": {
+                    "ThisIsText": {
+                        "$id": "#/properties/Data/items/properties/ThisIsText",
+                        "type": "string",
+                        "title": "The Thisistext Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Master"
+                        ]
+                    },
+                    "_id": {
+                        "$id": "#/properties/Data/items/properties/_id",
+                        "type": "string",
+                        "title": "The _id Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "SmokeDataset_30_ammj5k-_vk"
+                        ]
+                    }
+                }
+            }
+        },
+        "Filter": {
+            "$id": "#/properties/Filter",
+            "type": "object",
+            "title": "The Filter Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {}
+            ]
+        },
+        "Id": {
+            "$id": "#/properties/Id",
+            "type": "string",
+            "title": "The Id Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "SmokeDataset_30"
+            ]
+        },
+        "Sort": {
+            "$id": "#/properties/Sort",
+            "type": "array",
+            "title": "The Sort Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": []
+        }
+    }
+}
